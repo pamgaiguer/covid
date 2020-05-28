@@ -7,6 +7,9 @@ import { RouterModule } from '@angular/router';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { DataTablesModule } from 'angular-datatables';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CookieLawModule } from 'angular2-cookie-law';
+
 import { DashComponent } from './dash/dash.component';
 import { HowtouseComponent } from './howtouse/howtouse.component';
 import { ArticleComponent } from './article/article.component';
@@ -20,9 +23,9 @@ import { FortalezaComponent } from './case-study/fortaleza/fortaleza.component';
 import { HowToActComponent } from './how-to-act/how-to-act.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { PartnersComponent } from './partners/partners.component';
+import { MethodologyComponent } from './methodology/methodology.component';
 
 import * as $ from "jquery";
-import { MethodologyComponent } from './methodology/methodology.component';
 
 @NgModule({
     imports: [
@@ -31,7 +34,9 @@ import { MethodologyComponent } from './methodology/methodology.component';
         NgbModule,
         RouterModule,
         PdfViewerModule,
-        DataTablesModule
+        DataTablesModule,
+        BrowserAnimationsModule,
+        CookieLawModule,
     ],
     declarations: [
         DashComponent,
