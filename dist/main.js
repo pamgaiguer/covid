@@ -256,7 +256,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main publications\">\n    <div class=\"section section-gray\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-12\">\n                    <div class=\"main-header text-center\">\n                        <h3>Publicações</h3>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-3\">\n                    <div class=\"list-group\">\n                        <a routerLink=\"note3\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            O Índice de Vulnerabilidade COVID-19 (IVC19) (18/05/2020)\n                        </a>\n                        <a routerLink=\"note2\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Nota sobre estudo que prevê data para o fim da Pandemia (29/04/2020)\n                        </a>\n                        <a routerLink=\"note1\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Dados do prefeito de São José dos Campos são questionáveis (22/04/2020)\n                        </a>\n                        <a routerLink=\"article1\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Simulando a evolução da transmissão comunitária do coronavírus por meio do Modelo MD Corona (04/04/2020)\n                        </a>\n                        <!-- <a routerLink=\"article2\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Press Release\n                        </a> -->\n                    </div>\n                </div>\n                <div class=\"col-xs-12 col-md-9\">\n                    <!-- <p [class.d-none]=\"isOpen()\">Escolha o artigo a ser lido na sua lateral.</p> -->\n                    <router-outlet></router-outlet>\n                </div>                    \n            </div>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main publications\">\n    <div class=\"section section-gray\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-12\">\n                    <div class=\"main-header text-center\">\n                        <h3>Publicações</h3>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-3\">\n                    <div class=\"list-group\">\n                        <a routerLink=\"note4\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Nota técnica sobre o relaxamento do isolamento social no Estado de São Paulo previsto para o dia 1º de junho de 2020 (31/05/2020)\n                        </a>\n                        <a routerLink=\"note3\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            O Índice de Vulnerabilidade COVID-19 (IVC19) (18/05/2020)\n                        </a>\n                        <a routerLink=\"note2\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Nota sobre estudo que prevê data para o fim da Pandemia (29/04/2020)\n                        </a>\n                        <a routerLink=\"note1\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Dados do prefeito de São José dos Campos são questionáveis (22/04/2020)\n                        </a>\n                        <a routerLink=\"article1\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Simulando a evolução da transmissão comunitária do coronavírus por meio do Modelo MD Corona (04/04/2020)\n                        </a>\n                        <!-- <a routerLink=\"article2\" routerLinkActive=\"active\" class=\"list-group-item list-group-item-action\">\n                            Press Release\n                        </a> -->\n                    </div>\n                </div>\n                <div class=\"col-xs-12 col-md-9\">\n                    <!-- <p [class.d-none]=\"isOpen()\">Escolha o artigo a ser lido na sua lateral.</p> -->\n                    <router-outlet></router-outlet>\n                </div>                    \n            </div>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -348,6 +348,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"article-note\">\n  \n    <pdf-viewer [src]=\"src\"\n    [show-all]=\"false\"\n    [page]=\"page\"\n    (after-load-complete)=\"afterLoadComplete($event)\">\n    </pdf-viewer>\n    <hr>\n    <div *ngIf=\"isLoaded\" class=\"control-pdf-buttons\">\n      <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\n        <button type=\"button\" class=\"btn pdf-button\" (click)=\"prevPage()\" [disabled]=\"page === 1\">Anterior</button>\n        <button type=\"button\" class=\"btn pdf-button\" (click)=\"nextPage()\" [disabled]=\"page === totalPages\">Próximo</button>\n      </div>\n      <p class=\"text-center\"><span>{{ page }}</span> / <span>{{ totalPages }}</span></p>\n      \n      <p>Se você deseja efetuar o download do artigo, clique <a href=\"https://github.com/zecopol/zecopol/raw/master/Artigo_IVC_21052020.pdf\" target=\"_blank\">aqui</a></p>\n    </div>\n  </div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/publications/note4/note4.component.html":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/publications/note4/note4.component.html ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"article-note\">\n  \n    <pdf-viewer [src]=\"src\"\n    [show-all]=\"false\"\n    [page]=\"page\"\n    (after-load-complete)=\"afterLoadComplete($event)\">\n    </pdf-viewer>\n    <hr>\n    <div *ngIf=\"isLoaded\" class=\"control-pdf-buttons\">\n      <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\n        <button type=\"button\" class=\"btn pdf-button\" (click)=\"prevPage()\" [disabled]=\"page === 1\">Anterior</button>\n        <button type=\"button\" class=\"btn pdf-button\" (click)=\"nextPage()\" [disabled]=\"page === totalPages\">Próximo</button>\n      </div>\n      <p class=\"text-center\"><span>{{ page }}</span> / <span>{{ totalPages }}</span></p>\n      \n      <p>Se você deseja efetuar o download do artigo, clique <a href=\"./assets/articles/3105_NotaTecnica.pdf\" target=\"_blank\">aqui</a></p>\n    </div>\n  </div>");
 
 /***/ }),
 
@@ -571,6 +584,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _publications_note1_note1_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./publications/note1/note1.component */ "./src/app/publications/note1/note1.component.ts");
 /* harmony import */ var _publications_note2_note2_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./publications/note2/note2.component */ "./src/app/publications/note2/note2.component.ts");
 /* harmony import */ var _publications_note3_note3_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./publications/note3/note3.component */ "./src/app/publications/note3/note3.component.ts");
+/* harmony import */ var _publications_note4_note4_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./publications/note4/note4.component */ "./src/app/publications/note4/note4.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -580,6 +594,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+
 
 
 
@@ -611,6 +626,7 @@ var AppModule = /** @class */ (function () {
                 _publications_note1_note1_component__WEBPACK_IMPORTED_MODULE_14__["Note1Component"],
                 _publications_note2_note2_component__WEBPACK_IMPORTED_MODULE_15__["Note2Component"],
                 _publications_note3_note3_component__WEBPACK_IMPORTED_MODULE_16__["Note3Component"],
+                _publications_note4_note4_component__WEBPACK_IMPORTED_MODULE_17__["Note4Component"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -667,6 +683,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _publications_note1_note1_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./publications/note1/note1.component */ "./src/app/publications/note1/note1.component.ts");
 /* harmony import */ var _publications_note2_note2_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./publications/note2/note2.component */ "./src/app/publications/note2/note2.component.ts");
 /* harmony import */ var _publications_note3_note3_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./publications/note3/note3.component */ "./src/app/publications/note3/note3.component.ts");
+/* harmony import */ var _publications_note4_note4_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./publications/note4/note4.component */ "./src/app/publications/note4/note4.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -676,6 +693,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+
 
 
 
@@ -727,6 +745,10 @@ var routes = [
             {
                 path: 'note3',
                 component: _publications_note3_note3_component__WEBPACK_IMPORTED_MODULE_22__["Note3Component"]
+            },
+            {
+                path: 'note4',
+                component: _publications_note4_note4_component__WEBPACK_IMPORTED_MODULE_23__["Note4Component"]
             },
             {
                 path: 'article1',
@@ -4696,18 +4718,6 @@ var PublicationsComponent = /** @class */ (function () {
     }
     PublicationsComponent.prototype.ngOnInit = function () {
     };
-    PublicationsComponent.prototype.isOpen = function () {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
-        if (titlee.charAt(0) === '/publications') {
-            titlee = titlee.slice(5);
-        }
-        if (titlee == '/publications/article1' || titlee == '/publications/article2' || titlee == '/publications/note1' || titlee == '/publications/note2') {
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
     PublicationsComponent.ctorParameters = function () { return [
         { type: _angular_common__WEBPACK_IMPORTED_MODULE_1__["Location"] }
     ]; };
@@ -5141,6 +5151,72 @@ var Note3Component = /** @class */ (function () {
         })
     ], Note3Component);
     return Note3Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/publications/note4/note4.component.scss":
+/*!*********************************************************!*\
+  !*** ./src/app/publications/note4/note4.component.scss ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3B1YmxpY2F0aW9ucy9ub3RlNC9ub3RlNC5jb21wb25lbnQuc2NzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/publications/note4/note4.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/publications/note4/note4.component.ts ***!
+  \*******************************************************/
+/*! exports provided: Note4Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Note4Component", function() { return Note4Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+var Note4Component = /** @class */ (function () {
+    function Note4Component() {
+        this.src = "./assets/articles/3105_NotaTecnica.pdf";
+        this.page = 1;
+        this.isLoaded = false;
+    }
+    Note4Component.prototype.afterLoadComplete = function (pdfData) {
+        this.totalPages = pdfData.numPages;
+        this.isLoaded = true;
+    };
+    Note4Component.prototype.nextPage = function () {
+        this.page++;
+    };
+    Note4Component.prototype.prevPage = function () {
+        this.page--;
+    };
+    Note4Component.prototype.ngOnInit = function () {
+    };
+    Note4Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-note4',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./note4.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/publications/note4/note4.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./note4.component.scss */ "./src/app/publications/note4/note4.component.scss")).default]
+        })
+    ], Note4Component);
+    return Note4Component;
 }());
 
 
