@@ -15,17 +15,18 @@ export class PublicationsComponent implements OnInit {
   
   ngOnInit(): void {
   }
-  isOpen() {
-    var titlee = this.location.prepareExternalUrl(this.location.path());
-    if(titlee.charAt(0) === '/publications'){
-      titlee = titlee.slice(5);
-    }
-    if( titlee == '/publications/article1' || titlee == '/publications/article2' || titlee == '/publications/note1' || titlee == '/publications/note2' ) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-  
+  // isOpen() {
+  //   var titlee = this.location.prepareExternalUrl(this.location.path());
+  //   if(titlee.charAt(0) === '/publications'){
+  //     titlee = titlee.slice(5);
+  //   }
+  //   if( titlee == '/publications/article1' || 
+  //   titlee == '/publications/article2' || titlee == '/publications/note1' || titlee == '/publications/note2' || titlee == '/publications/note3'
+  //   || titlee == '/publications/note4' ) {
+  //     return true;
+  //   }
+  //   else {
+  //     return false;
+  //   }
+  // }
 }
