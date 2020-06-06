@@ -185,14 +185,10 @@ textarea{
     }
     .card{
         overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-x: auto;
         table{
             font-size: 12px;
         }
-    }
-    .table-ivcovid-rj{
-        // height: 95vh;
-        // ola
     }
 }
 .methodology{
