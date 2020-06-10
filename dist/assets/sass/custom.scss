@@ -182,6 +182,7 @@ textarea{
 .dash{
     .simulador{
         height: 95vh;
+        overflow: hidden;
     }
     .card{
         overflow-y: scroll;
