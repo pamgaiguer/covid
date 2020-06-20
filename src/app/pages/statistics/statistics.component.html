@@ -19,11 +19,34 @@
                     <ngb-accordion [closeOthers]="true">
                         <ngb-panel id="static-1">
                             <ng-template ngbPanelTitle>
+                                <h4>Estudo de Caso: São Paulo</h4>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>
+                                    Com base nos dados do DataSUS de hospitalizações de Síndrome Respiratória Aguda Grave (2020) e do Censo (IBGE, 2010), e com a parceria do LabCidade FAU-USP, foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município de São Paulo para cada uma das escalas do IPC19. 
+                                </p>
+                                <p>
+                                    Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, para faixas mais baixas, que representam bairros onde o poder aquisitivo é menor e que portanto são vistos como mais vulneráveis ao vírus, é possível notar que a quantidade de casos e de óbitos é consideravelmente maior do que nos locais mais bem estruturados do município, onde o índice é maior e a vulnerabilidade, por sua vez, menor.
+                                </p>
+                                <p>
+                                    Em relação à letalidade, podemos também observar esse fenômeno. Para bairros cuja proteção é muito baixa, a taxa de letalidade é quase 5% maior do que em bairros cujo índice foi classificado como alto. Ou seja, a razão entre óbitos e casos para os bairros classificados como baixa proteção ao covid-19 é relevante mesmo mesmo sem considerar a diferença na oferta de testes para esses diferentes segmentos da população.
+                                </p>
+                                <p>
+                                    Pode-se presumir que mais testes são feitos entre a população mais protegida, mas isso não se repete para o grupo menos protegido. A diferença significativa na taxa de letalidade entre os grupos também permite inferir que os pacientes mais vulneráveis à doença são encaminhados ao pronto-atendimento em um estágio mais grave da doença, ou ainda, são testados apenas após virem a óbito.
+                                </p>
+                                <p>
+                                    <strong>* Foram considerados apenas os registros com CEP identificável entre 17/03/2020 e 18/05/2020. </strong>
+                                </p>
+                                <iframe id="saopaulo" src="https://datastudio.google.com/embed/reporting/5ab7d932-9b66-46f4-ac96-a7e1825ea125/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </ng-template> 
+                        </ngb-panel> 
+                        <ngb-panel id="static-2">
+                            <ng-template ngbPanelTitle>
                                 <h4>Estudo de Caso: Rio de Janeiro</h4>
                             </ng-template>
                             <ng-template ngbPanelContent>
                                 <p>
-                                    Com as bases do Data Rio (2020) e do Censo (IBGE, 2010), foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município do Rio de Janeiro para cada uma das escalas do IVC19.
+                                    Com as bases do Data Rio (2020) e do Censo (IBGE, 2010), foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município do Rio de Janeiro para cada uma das escalas do IPC19.
                                 </p>
                                 <p>
                                     Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, no primeiro momento, o vírus atingiu o grupo menos vulnerável, que se concentra nos bairros onde o poder aquisitivo é maior. Em seguida, avançou para as regiões mais vulneráveis do Rio, onde vive considerável parcela dos trabalhadores essenciais. 
@@ -37,15 +60,15 @@
                                 
                                 <iframe id="riodejaneiro" src="https://datastudio.google.com/embed/reporting/98e493ef-b0fb-4396-9d7b-c395f3681b5e/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 <hr>
-                                <h4>Escala de Vulnerabilidade aplicada ao IVC19</h4>
+                                <h4>Escala de Vulnerabilidade aplicada ao IPC19</h4>
                                 <p>
-                                    Para definir as faixas de vulnerabilidade, aplicamos as mesmas variáveis, do IVC19 de zonas urbanas, aos 162 bairros do Rio de Janeiro. Com isso, Grumari (0,28), Mangueira (0,30) e Rocinha (0,31), são os três bairros com menor índice e foram classificados como muito vulneráveis ao Covid-19. Gamboa (0,61) e Santa Cruz (0,64) foram classificados como vulneráveis, Bangu (0,75) e São Conrado como médio e, por fim, Copacabana (0,88) e Ipanema (0,89) são pouco vulneráveis.
+                                    Para definir as faixas de vulnerabilidade, aplicamos as mesmas variáveis, do IPC19 de zonas urbanas, aos 162 bairros do Rio de Janeiro. Com isso, Grumari (0,28), Mangueira (0,30) e Rocinha (0,31), são os três bairros com menor índice e foram classificados como muito vulneráveis ao Covid-19. Gamboa (0,61) e Santa Cruz (0,64) foram classificados como vulneráveis, Bangu (0,75) e São Conrado como médio e, por fim, Copacabana (0,88) e Ipanema (0,89) são pouco vulneráveis.
                                     
                                     Com isso, chegamos às 4 faixas de vulnerabilidade detalhados nas tabelas e histograma a seguir (tabela 2 e 3).
                                 </p>
                                 <div class="table-responsive-sm">
                                     <table class="table table-bordered table-striped table2 float-left">
-                                        <caption>Tabela 2: Faixas semafóricas do IVC</caption>
+                                        <caption>Tabela 2: Faixas semafóricas do IPC</caption>
                                         <thead>
                                             <tr>
                                                 <th>Pontuação</th>
@@ -80,12 +103,35 @@
                                 <img src="./assets/img/statistics/statistics_riodejaneiro_image4.png" class="mx-auto d-block img-fluid">
                             </ng-template>
                         </ngb-panel>
-                        <ngb-panel id="static-2">
+                        <ngb-panel id="static-3">
                             <ng-template ngbPanelTitle>
                                 <h4>Estudo de Caso: Fortaleza</h4>
                             </ng-template>
                             <ng-template ngbPanelContent>
+                                <p>
+                                    Com as bases do IntegraSUS (2020) e do Censo (IBGE, 2010), foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município de Fortaleza para cada uma das escalas do IPC19.
+                                </p>
+                                <p>
+                                    Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, no primeiro momento, o vírus atingiu o grupo que possui alta proteção ao covid-19 e que se concentra nos bairros onde o poder aquisitivo é maior. Em seguida, avançou para as regiões mais vulneráveis, onde vive considerável parcela dos trabalhadores essenciais.
+                                </p>
+                                <p>
+                                    A incidência de contaminados, mortos, bem como a taxa de letalidade é mais alta nas faixas de baixa e muito baixa proteção ao covid-19, o mesmo podemos observar ao analisar esses indicadores em cada uma das faixas do Indice de Desenvolvimento Humano (IDH).
+                                </p>
+                                <p>
+                                    Podemos presumir que mais testes são feitos entre a população menos exposta ao vírus, o que não se repete para o grupo mais vulnerável. A diferença significativa na taxa de letalidade entre os grupos também permite inferir que os pacientes mais vulneráveis à doença são encaminhados ao pronto-atendimento em um estágio mais grave da doença, ou ainda, são testados apenas após virem a óbito.
+                                </p>
                                 <iframe id="fortaleza" src="https://datastudio.google.com/embed/reporting/9ba420d4-a555-414c-a671-00f50821a6b1/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </ng-template> 
+                        </ngb-panel> 
+                        <ngb-panel id="static-4">
+                            <ng-template ngbPanelTitle>
+                                <h4>Estudo de Caso: Brasil</h4>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>
+                                    A partir dos dados de casos e óbitos fornecidos diariamente pelas secretarias estaduais e compilados pelo grupo Brasil.io foi possível construir um painel com atualização diária de casos, óbitos e letalidade para todo o Brasil.
+                                </p>
+                                <iframe id="brazil" src="https://datastudio.google.com/embed/reporting/f5dbc47c-f6df-4885-9d15-5c63535fe1c9/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </ng-template> 
                         </ngb-panel> 
                     </ngb-accordion>

@@ -144,6 +144,7 @@ textarea{
         font-weight: 700;
         font-size: 32px;
         text-transform: uppercase;
+        margin-top: 50px;
     }
 }
 .home{
@@ -250,7 +251,7 @@ textarea{
             }
         }
     }
-    #riodejaneiro, #fortaleza{
+    #riodejaneiro, #fortaleza, #saopaulo, #brazil{
         width: 70vw;
         height: 1000px;
     }
@@ -345,8 +346,6 @@ textarea{
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
         }
-        
-        
     }
 }
 
@@ -362,6 +361,7 @@ textarea{
         padding: 10px 0;
         h3{
             font-size: 28px;
+            margin-top: 25px;
         }
     }
     .publications{
