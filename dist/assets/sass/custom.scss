@@ -148,6 +148,9 @@ textarea{
     }
 }
 .home{
+    .main-header{
+        margin-top: 25px;
+    }
     p{
         margin-bottom: 15px;
     }
@@ -355,6 +358,11 @@ textarea{
             .logo-web{
                 height: 8vh;
             }
+        }
+    }
+    .home{
+        .main-header{
+            margin-top: 10px;
         }
     }
     .main-header{

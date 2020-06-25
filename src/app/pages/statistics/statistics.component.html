@@ -12,9 +12,57 @@
                 <div class="col-xs-12 col-md-12">
                     <div class="card">
                         <p>
-                            Nesta página, apresentamos as estatísticas e os estudos de caso sobre a vulnerabilidade à Covid-19 e as medidas de proteção às populações expostas. 
-                            Empregamos o IPC19 <a href="./assets/articles/ArtigoIPC_31052020.pdf" target="_blank">(clique aqui para conhecer)</a> para compreender as curvas de infecção, morte e mortalidade, segundo as diferentes escalas de vulnerabilidade.
+                            Nesta página, apresentamos as estatísticas e os estudos de caso sobre a vulnerabilidade à Covid-19 e as medidas de proteção às populações expostas. Empregamos o Índice de Proteção ao Covid-19 <a href="./assets/articles/2506_Artigo_IPC19.pdf" target="_blank">(clique aqui para conhecer)</a>  para compreender as curvas de infecção, morte e mortalidade, segundo as diferentes escalas de vulnerabilidade. 
+                            Segue abaixo as faixas do mesmo e sua correspondência com o Índice de Desenvolvimento Humano: 
                         </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4"></div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-bordered table-striped table2 float-left">
+                                        <thead>
+                                            <tr>
+                                                <th>Pontuação</th>
+                                                <th>Indicativo Covid-19</th>
+                                                <th>Cor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>acima de 0.8</td>
+                                                <td>Proteção muito alta</td>
+                                                <td style="background-color: rgb(076, 175,233); color: black;">Azul</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.7 a 0.799</td>
+                                                <td>Proteção Alta</td>
+                                                <td style="background-color: rgb(117, 249,76); color: black;">Verde</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.6 a 0.699</td>
+                                                <td>Proteção Média</td>
+                                                <td style="background-color: rgb(255, 253,85); color: black;">Amarela</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.5 a 0.599</td>
+                                                <td>Proteção Baixa</td>
+                                                <td style="background-color: rgb(242, 157,57); color: black;">Laranja</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Abaixo de 0.5</td>
+                                                <td>Proteção Muito Baixa</td>
+                                                <td style="background-color: rgb(188, 38,26); color: black;">Vermelho</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4"></div>
+
+                        </div>
+                        
+                        
                     </div>
                     <ngb-accordion [closeOthers]="true">
                         <ngb-panel id="static-1">
@@ -23,16 +71,16 @@
                             </ng-template>
                             <ng-template ngbPanelContent>
                                 <p>
-                                    Com base nos dados do DataSUS de hospitalizações de Síndrome Respiratória Aguda Grave (2020) e do Censo (IBGE, 2010), e com a parceria do LabCidade FAU-USP, foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município de São Paulo para cada uma das escalas do IPC19. 
+                                    Com base nos dados do DataSUS de hospitalizações de Síndrome Respiratória Aguda Grave (2020) e do Censo (IBGE, 2010), e com a parceria do LabCidade FAU-USP, foi possível desenvolver uma análise da distribuição de contaminados e mortos pela COVID-19 no município de São Paulo para cada uma das escalas do Índice de Proteção ao Covid-19.
                                 </p>
                                 <p>
-                                    Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, para faixas mais baixas, que representam bairros onde o poder aquisitivo é menor e que portanto são vistos como mais vulneráveis ao vírus, é possível notar que a quantidade de casos e de óbitos é consideravelmente maior do que nos locais mais bem estruturados do município, onde o índice é maior e a vulnerabilidade, por sua vez, menor.
+                                    Analisando os números de contaminados e mortos para cada faixa do índice, é possível observar que, para faixas mais baixas, que representam bairros onde o poder aquisitivo é menor e que portanto são vistos como mais vulneráveis ao vírus, é possível notar que a quantidade de casos e óbitos é maior do que nos bairros menos vulneráveis do município, onde o índice é maior e a vulnerabilidade, por sua vez, menor.
                                 </p>
                                 <p>
-                                    Em relação à letalidade, podemos também observar esse fenômeno. Para bairros cuja proteção é muito baixa, a taxa de letalidade é quase 5% maior do que em bairros cujo índice foi classificado como alto. Ou seja, a razão entre óbitos e casos para os bairros classificados como baixa proteção ao covid-19 é relevante mesmo mesmo sem considerar a diferença na oferta de testes para esses diferentes segmentos da população.
+                                    Em relação à letalidade, podemos também observar esse fenômeno. Para bairros cuja proteção é muito baixa, a taxa de letalidade é quase 5% maior do que em bairros cujo índice foi classificado como alto. Ou seja, a razão entre óbitos e casos para os bairros classificados como baixa proteção ao covid-19 é relevante mesmo sem considerar a diferença na oferta de testes para esses diferentes segmentos da população
                                 </p>
                                 <p>
-                                    Pode-se presumir que mais testes são feitos entre a população mais protegida, mas isso não se repete para o grupo menos protegido. A diferença significativa na taxa de letalidade entre os grupos também permite inferir que os pacientes mais vulneráveis à doença são encaminhados ao pronto-atendimento em um estágio mais grave da doença, ou ainda, são testados apenas após virem a óbito.
+                                    Possivelmente, mais testes são feitos entre a população com um nível mais alto de proteção ao covid-19. A diferença significativa na taxa de letalidade entre os grupos também permite levantar a hipótese de que os pacientes mais vulneráveis à doença são encaminhados ao pronto-atendimento em um estágio mais grave da doença, ou ainda, são testados apenas após virem a óbito.  
                                 </p>
                                 <p>
                                     <strong>* Foram considerados apenas os registros com CEP identificável entre 17/03/2020 e 18/05/2020. </strong>
@@ -59,48 +107,7 @@
                                 </p>
                                 
                                 <iframe id="riodejaneiro" src="https://datastudio.google.com/embed/reporting/98e493ef-b0fb-4396-9d7b-c395f3681b5e/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                <hr>
-                                <h4>Escala de Vulnerabilidade aplicada ao IPC19</h4>
-                                <p>
-                                    Para definir as faixas de vulnerabilidade, aplicamos as mesmas variáveis, do IPC19 de zonas urbanas, aos 162 bairros do Rio de Janeiro. Com isso, Grumari (0,28), Mangueira (0,30) e Rocinha (0,31), são os três bairros com menor índice e foram classificados como muito vulneráveis ao Covid-19. Gamboa (0,61) e Santa Cruz (0,64) foram classificados como vulneráveis, Bangu (0,75) e São Conrado como médio e, por fim, Copacabana (0,88) e Ipanema (0,89) são pouco vulneráveis.
-                                    
-                                    Com isso, chegamos às 4 faixas de vulnerabilidade detalhados nas tabelas e histograma a seguir (tabela 2 e 3).
-                                </p>
-                                <div class="table-responsive-sm">
-                                    <table class="table table-bordered table-striped table2 float-left">
-                                        <caption>Tabela 2: Faixas semafóricas do IPC</caption>
-                                        <thead>
-                                            <tr>
-                                                <th>Pontuação</th>
-                                                <th>Indicativo</th>
-                                                <th>Cor</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>acima de 0.8</td>
-                                                <td>Pouco Vulnerável</td>
-                                                <td style="background-color: rgb(117, 249,76); color: black;">Verde</td>
-                                            </tr>
-                                            <tr>
-                                                <td>0.65 a 0.8</td>
-                                                <td>Vulnerabilidade Média</td>
-                                                <td style="background-color: rgb(255, 253,85); color: black;">Amarela</td>
-                                            </tr>
-                                            <tr>
-                                                <td>0.5 a 0.65</td>
-                                                <td>Vulnerável</td>
-                                                <td style="background-color: rgb(242, 157,57); color: black;">Laranja</td>
-                                            </tr>
-                                            <tr>
-                                                <td>abaixo de 0.5</td>
-                                                <td>Muito Vulnerável</td>
-                                                <td style="background-color: rgb(188, 38,26); color: black;">Vermelho</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <img src="./assets/img/statistics/statistics_riodejaneiro_image4.png" class="mx-auto d-block img-fluid">
+                                
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel id="static-3">

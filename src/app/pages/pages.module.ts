@@ -26,6 +26,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { MethodologyComponent } from './methodology/methodology.component';
 
 import * as $ from "jquery";
+import { SaopauloComponent } from './case-study/saopaulo/saopaulo.component';
 
 @NgModule({
     imports: [
@@ -53,6 +54,7 @@ import * as $ from "jquery";
         StatisticsComponent,
         PartnersComponent,
         MethodologyComponent,
+        SaopauloComponent,
     ]
 })
 export class PagesModule { }
