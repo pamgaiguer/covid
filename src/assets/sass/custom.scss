@@ -147,6 +147,7 @@ textarea{
         margin-top: 50px;
     }
 }
+
 .home{
     .main-header{
         margin-top: 25px;
@@ -183,13 +184,34 @@ textarea{
         }
     }
 }
-.dash{
+.saopaulo{
+    caption{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .references{
+        li{
+            margin: 15px 0;
+        }
+    }
+    p{
+        text-align: justify;
+    }
+    .mapa-saopaulo{
+        width: 75%;
+        text-align: center;
+    }
+}
 
+.dash{
+    .dash-spacer{
+        margin-bottom: 10px;
+        padding: 0 0 25px 0;
+    }
     .embed-responsive iframe {
         left: 75px !important;
         width: 95% !important;
     }
-
     .simulador{
         height: 75vh;
         overflow: hidden;
@@ -404,6 +426,6 @@ textarea{
             width: 90px;
         }
     }
-
+    
 }
 
