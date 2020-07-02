@@ -149,11 +149,30 @@ textarea{
 }
 
 .home{
-    .main-header{
+    .section{
         margin-top: 25px;
     }
-    p{
-        margin-bottom: 15px;
+    .card{
+        .home-title{
+            color: black;
+            border-left: 8px solid black;
+            padding-left: 10px;
+        }
+        .border-color-red{
+            border-left: 8px solid #e83632;
+        }
+    }
+    .main-header-home{
+        margin-top: 20px;
+        background-image: url('../img//home/header_wide.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 45vh;
+
+        p{
+            text-indent: -1000px;
+        }
     }
 }
 .copacabana, .fortaleza{

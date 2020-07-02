@@ -33,7 +33,7 @@ const routes: Routes =[
   { path: 'home',    component: HomeComponent },
   { path: 'copacabana',    component: CopacabanaComponent },
   { path: 'fortaleza',    component: FortalezaComponent },
-  { path: 'saopaulo',    component: SaopauloComponent },
+  // { path: 'saopaulo',    component: SaopauloComponent },
   { path: 'dash',       component: DashComponent },
   { path: 'howtouse',    component: HowtouseComponent },
   { path: 'howtoact',    component: HowToActComponent },
