@@ -147,12 +147,43 @@ textarea{
         margin-top: 50px;
     }
 }
+
 .home{
-    .main-header{
+    .section{
         margin-top: 25px;
     }
-    p{
-        margin-bottom: 15px;
+    .card{
+        .home-title{
+            color: black;
+            border-left: 8px solid black;
+            padding-left: 10px;
+        }
+        .border-color-red{
+            border-left: 8px solid #e83632;
+        }
+    }
+    .main-header-home{
+        margin-top: 20px;
+        background-image: url('../img//home/header_wide.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 45vh;
+        
+        p{
+            text-indent: -1000px;
+        }
+    }
+    .media{
+        .home-media-img{
+            width: 64px;
+            height: 64px;
+        }
+        .media-body{
+            h5{
+                font-weight: 400;
+            }
+        }
     }
 }
 .copacabana, .fortaleza{
@@ -183,13 +214,34 @@ textarea{
         }
     }
 }
-.dash{
+.saopaulo{
+    caption{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .references{
+        li{
+            margin: 15px 0;
+        }
+    }
+    p{
+        text-align: justify;
+    }
+    .mapa-saopaulo{
+        width: 75%;
+        text-align: center;
+    }
+}
 
+.dash{
+    .dash-spacer{
+        margin-bottom: 10px;
+        padding: 0 0 25px 0;
+    }
     .embed-responsive iframe {
         left: 75px !important;
         width: 95% !important;
     }
-
     .simulador{
         height: 75vh;
         overflow: hidden;
@@ -357,6 +409,7 @@ textarea{
         .navbar-brand{
             .logo-web{
                 height: 8vh;
+                margin-left: 11px;
             }
         }
     }
@@ -404,6 +457,6 @@ textarea{
             width: 90px;
         }
     }
-
+    
 }
 

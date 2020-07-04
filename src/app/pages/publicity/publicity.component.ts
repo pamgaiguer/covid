@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { publicity } from './publicity'
+
 
 @Component({
   selector: 'app-publicity',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./publicity.component.scss']
 })
 export class PublicityComponent implements OnInit {
+
+  allpublicity = publicity;
 
   constructor() { }
 

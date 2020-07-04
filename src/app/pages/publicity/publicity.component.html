@@ -10,114 +10,19 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-12">
-                    <!-- justify-content-md-center -->
                     <div class="card">
                         <div class="list-group">
-                        
-                        <a href="https://www.brasildefato.com.br/2020/05/30/pesquisadores-divulgam-nota-tecnica-criticando-proposta-de-isolamento-de-joao-doria" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 publicity-title">Brasil de Fato</h5>
-                                <small>30/05/2020</small>
+                            <div  *ngFor="let midia of allpublicity; let i = index">
+                                <a href="{{midia.link}}" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 publicity-title">{{midia.fonte}}</h5>
+                                        <small>{{midia.data}}</small>
+                                    </div>
+                                    <p class="mb-1">
+                                        {{midia.titulo}}
+                                    </p>
+                                </a>
                             </div>
-                            <p class="mb-1">
-                                Pesquisadores divulgam nota técnica criticando proposta de isolamento de João Doria
-                            </p>
-                        </a>
-
-                        <a href="https://noticias.uol.com.br/cotidiano/ultimas-noticias/2020/05/30/pesquisadores-contestam-relaxamento-de-isolamento-em-sao-paulo.htm" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 publicity-title">UOL</h5>
-                                <small>30/05/2020</small>
-                            </div>
-                            <p class="mb-1">
-                                Pesquisadores contestam relaxamento de isolamento em São Paulo
-                            </p>
-                        </a>
-
-
-                            <a href="https://www.dw.com/pt-br/desigualdade-eleva-letalidade-da-covid-na-favela-diz-estudo/a-53586352" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title">DW</h5>
-                                    <small>28/05/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    Desigualdade eleva letalidade da covid na favela, diz estudo
-                                </p>
-                            </a>
-
-                            <a href="https://valor.globo.com/brasil/noticia/2020/05/21/lockdown-exigira-ajuda-a-mais-pobres-dizem-especialistas.ghtml" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title">Valor</h5>
-                                    <small>21/05/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    'Lockdown' exigirá ajuda a mais pobres, dizem especialistas
-                                </p>
-                            </a>
-
-                            <a class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title">Carta Capital</h5>
-                                    <small>08/04/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    "Mal incurável - O Austerício e a demonização do Estado encontram seu último refúgio no Brasil de Paulo Guedes" por Carlos Drummond <br>
-                                    <strong>Edição impressa apenas.</strong>
-                                </p>
-                            </a>
-                            
-                            <a href="https://revistagalileu.globo.com/Tecnologia/noticia/2020/04/cientistas-brasileiros-desenvolvem-simulador-de-disseminacao-da-covid-19.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title">Revista Galileu</h5>
-                                    <small>07/04/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    Cientistas brasileiros desenvolvem simulador de disseminação da Covid-19
-                                </p>
-                            </a>
-                            <a href="https://noticias.uol.com.br/colunas/leonardo-sakamoto/2020/04/01/sao-paulo-pode-passar-por-novos-confinamentos-mostra-simulador-de-covid-19.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title">Coluna Leonardo Sakamoto</h5>
-                                    <small>01/04/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    Brasil pode passar por ondas de confinamentos aponta simulador de Covid-19
-                                </p>
-                            </a>
-                            
-
-                            <a href="https://diplomatique.org.br/simulacoes-indicam-que-confinamento-deve-ser-maximo/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title">Le monde Diplomatique Brasil</h5>
-                                    <small>01/04/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    Simulações indicam que confinamento deve ser máximo
-                                </p>
-                            </a>
-                            
-                            <a target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title"> Mídia Ninja </h5>
-                                    <small>03/04/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    VIVA A CIÊNCIA! Enquanto Bolsonaro espalha mentiras e corta recursos para pesquisadores, a academia se debruça em novos estudos sobre coronavírus
-                                    <br>
-                                    <a href="https://www.instagram.com/p/B-fcjP_hbii/" target="_blank"><i class="fab fa-instagram-square"></i></a> | 
-                                    <a href="https://www.facebook.com/MidiaNINJA/photos/a.164308700393950/1810914195733384" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                                </p>
-                            </a>
-
-                            <a href="https://radiobandeirantes.band.uol.com.br/programas/5e9240d28525f5fc2faf06a2/5a4562d9fadeb628046b1f02" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1 publicity-title"> "Você é Curioso?" </h5>
-                                    <small>11/04/2020</small>
-                                </div>
-                                <p class="mb-1">
-                                    Participação no programa da Rádio Bandeirantes "Você é Curioso?"
-                                </p>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -125,4 +30,5 @@
         </div>
     </div>
 </div>
+
 
