@@ -169,9 +169,20 @@ textarea{
         background-size: cover;
         background-repeat: no-repeat;
         height: 45vh;
-
+        
         p{
             text-indent: -1000px;
+        }
+    }
+    .media{
+        .home-media-img{
+            width: 64px;
+            height: 64px;
+        }
+        .media-body{
+            h5{
+                font-weight: 400;
+            }
         }
     }
 }
@@ -398,6 +409,7 @@ textarea{
         .navbar-brand{
             .logo-web{
                 height: 8vh;
+                margin-left: 11px;
             }
         }
     }

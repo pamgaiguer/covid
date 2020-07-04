@@ -20,8 +20,8 @@
                                     Com esse conhecimento, propomos medidas de proteção da população e mitigação dos efeitos sociais e econômicos.
                                 </p>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">Leia nossas publicações</a></li>
-                                    <li><a href="#">Conheça a equipe</a></li>
+                                    <li><a [routerLink]="['/publications']">Leia nossas publicações</a></li>
+                                    <li><a [routerLink]="['/aboutus']">Conheça a equipe</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-12 col-md-6">
@@ -38,8 +38,6 @@
                 <div class="col-sm-12 col-md-12">
                     <div class="card">
                         <h5 class="home-title" style="border-left: 8px solid #4490bc">Casos Exemplares</h5>
-                        
-                        
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
                                 <h5 style="color:black">As Cidades e o Bairros</h5>
@@ -51,17 +49,15 @@
                             <div class="col-sm-12 col-md-6">
                                 <em>Confira os estudos e a evolução da curva de propagação com maiores detalhes por cidade:</em>
                                 <ul class="list-unstyled">
-                                    <li><a href="">Rio de Janeiro: um bairro, duas curvas</a></li>
-                                    <li><a href="">Fortaleza: entre Barra do Ceará e Meireles</a></li>
-                                    <li><a href="">São Paulo: uma cidade, muitas curvas</a></li>
+                                    <li><a [routerLink]="['/copacabana']">Copacabana: um bairro, duas curvas</a></li>
+                                    <li><a [routerLink]="['/fortaleza']">Fortaleza: entre Barra do Ceará e Meireles</a></li>
+                                    <li><a [routerLink]="['/saopaulo']">São Paulo: uma cidade, muitas curvas</a></li>
                                 </ul>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-            
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <div class="card">
@@ -71,8 +67,8 @@
                             O isolamento social exige medidas coordenadas de atores da esfera pública, lideranças comunitárias e setor privado.
                         </p>
                         <ul class="list-unstyled">
-                            <li><a href="">Saiba mais sobre as medidas</a></li>
-                            <li><a href="">Confira as estatísticas da pandemia</a></li>
+                            <li><a [routerLink]="['/howtoact']">Saiba mais sobre as medidas</a></li>
+                            <li><a [routerLink]="['/statistics']">Confira as estatísticas da pandemia</a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,10 +79,9 @@
                             A partir dos principais modelos epideiológicos, criamos um simulador do avanço das infecções. A ferramenta pode ser usada por todos os brasileiros
                             para estimar como a doença pode afetar sua região e entornos.
                         </p>
-
                         <ul class="list-unstyled">
-                            <li><a href="#">Faça sua própria simulação</a></li>
-                            <li><a href="#">Como usar o simulador</a></li>
+                            <li><a [routerLink]="['/dash']">Faça sua própria simulação</a></li>
+                            <li><a [routerLink]="['/howtouse']">Como usar o simulador</a></li>
                         </ul>
                     </div>
                 </div>
@@ -96,11 +91,38 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="card">
                         <h5 class="home-title" style="border-left: 8px solid #ea637d">Na Midia</h5>
+
+                        <div class="media">
+                            <!-- <img class="align-self-center mr-3 home-media-img" src="..." alt="Generic placeholder image"> -->
+                            <div class="media-body">
+                              <h5>Center-aligned media</h5>
+                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="media">
+                            <!-- <img class="align-self-center mr-3 home-media-img" src="..." alt="Generic placeholder image"> -->
+                            <div class="media-body">
+                              <h5>Center-aligned media</h5>
+                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="media">
+                            <!-- <img class="align-self-center mr-3 home-media-img" src="..." alt="Generic placeholder image"> -->
+                            <div class="media-body">
+                              <h5>Center-aligned media</h5>
+                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                            </div>
+                          </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="card">
                         <h5 class="home-title" style="border-left: 8px solid #ea623d">Redes Sociais</h5>
+
+                        <a href="https://twitter.com/AcaoCovid?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="pt" data-show-count="false">Follow @AcaoCovid</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <!-- <a class="twitter-timeline" data-lang="pt" data-theme="light" href="https://twitter.com/AcaoCovid?ref_src=twsrc%5Etfw">Tweets by AcaoCovid</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
                     </div>
                 </div>
             </div>
