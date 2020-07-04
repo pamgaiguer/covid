@@ -92,37 +92,32 @@
                     <div class="card">
                         <h5 class="home-title" style="border-left: 8px solid #ea637d">Na Midia</h5>
 
-                        <div class="media">
-                            <!-- <img class="align-self-center mr-3 home-media-img" src="..." alt="Generic placeholder image"> -->
-                            <div class="media-body">
-                              <h5>Center-aligned media</h5>
-                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                        <div class="list-group">
+                            <div  *ngFor="let midia of allpublicity; let i = index">
+                                <div *ngIf="i<3">
+
+                                <a href="{{midia.link}}" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 publicity-title">{{midia.fonte}}</h5>
+                                        <small>{{midia.data}}</small>
+                                    </div>
+                                    <p class="mb-1">
+                                        {{midia.titulo}}
+                                    </p>
+                                </a>
                             </div>
-                          </div>
-                          <hr>
-                          <div class="media">
-                            <!-- <img class="align-self-center mr-3 home-media-img" src="..." alt="Generic placeholder image"> -->
-                            <div class="media-body">
-                              <h5>Center-aligned media</h5>
-                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+
                             </div>
-                          </div>
-                          <hr>
-                          <div class="media">
-                            <!-- <img class="align-self-center mr-3 home-media-img" src="..." alt="Generic placeholder image"> -->
-                            <div class="media-body">
-                              <h5>Center-aligned media</h5>
-                              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
-                            </div>
-                          </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="card">
                         <h5 class="home-title" style="border-left: 8px solid #ea623d">Redes Sociais</h5>
 
-                        <a href="https://twitter.com/AcaoCovid?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="pt" data-show-count="false">Follow @AcaoCovid</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        <!-- <a class="twitter-timeline" data-lang="pt" data-theme="light" href="https://twitter.com/AcaoCovid?ref_src=twsrc%5Etfw">Tweets by AcaoCovid</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                        <!-- <a href="https://twitter.com/AcaoCovid?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="pt" data-show-count="false">Follow @AcaoCovid</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                        <a class="twitter-timeline" data-lang="pt" data-theme="light" href="https://twitter.com/AcaoCovid?ref_src=twsrc%5Etfw">Tweets by AcaoCovid</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </div>
