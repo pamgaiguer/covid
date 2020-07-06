@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
-import { PdfViewerModule } from 'ng2-pdf-viewer';
-
 import { ComponentsModule } from './components/components.module';
 
 import { PagesModule } from './pages/pages.module';
@@ -19,9 +17,9 @@ import { Article2Component } from './publications/article2/article2.component';
 import { Note1Component } from './publications/note1/note1.component';
 import { Note2Component } from './publications/note2/note2.component';
 import { Note3Component } from './publications/note3/note3.component';
+import { Note4Component } from './publications/note4/note4.component';
 
 import * as $ from "jquery";
-import { Note4Component } from './publications/note4/note4.component';
 
 @NgModule({
   declarations: [
@@ -40,10 +38,9 @@ import { Note4Component } from './publications/note4/note4.component';
     NgbModule,
     FormsModule,
     RouterModule,
-    PdfViewerModule,
     ComponentsModule,
     PagesModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   exports: [],
   providers: [],

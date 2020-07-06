@@ -9,6 +9,7 @@ import { DataTablesModule } from 'angular-datatables';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CookieLawModule } from 'angular2-cookie-law';
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 
 import { DashComponent } from './dash/dash.component';
 import { HowtouseComponent } from './howtouse/howtouse.component';
@@ -24,9 +25,9 @@ import { HowToActComponent } from './how-to-act/how-to-act.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { PartnersComponent } from './partners/partners.component';
 import { MethodologyComponent } from './methodology/methodology.component';
-
 import * as $ from "jquery";
 import { SaopauloComponent } from './case-study/saopaulo/saopaulo.component';
+
 
 @NgModule({
     imports: [
@@ -38,6 +39,7 @@ import { SaopauloComponent } from './case-study/saopaulo/saopaulo.component';
         DataTablesModule,
         BrowserAnimationsModule,
         CookieLawModule,
+        NgxTwitterTimelineModule
     ],
     declarations: [
         DashComponent,
