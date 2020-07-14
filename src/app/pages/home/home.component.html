@@ -15,9 +15,11 @@
                         
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
-                                <p class="text-justify">
-                                    O Ação Covid-19 é um grupo interdisciplinar de pesquisadores dedicados a entender como a desigualdade afeta a evolução da pandemia no Brasil.
-                                    Com esse conhecimento, propomos medidas de proteção da população e mitigação dos efeitos sociais e econômicos.
+                                <p>
+                                    O Ação Covid-19 é um grupo interdisciplinar de pesquisadores dedicados a entender como a desigualdade afeta a evolução da pandemia no Brasil. Dependendo das condições de vida no seu bairro ou território, você pode estar mais exposto ou mais protegido ao vírus. Nesta página, disponibilizamos um simulador para que você possa testar a situação do seu entorno.
+                                </p>
+                                <p>
+                                    O simulador aplica um indicador criado pelo nosso grupo: o Índice de Proteção à Covid-19 (IPC), que estima o quanto um bairro ou território está protegido, segundo uma série de dados: densidade demográfica, mobilidade, desenvolvimento humano e outros. Estamos calculando o IPC para localidades em todo o país.
                                 </p>
                                 <ul class="list-unstyled">
                                     <li><a [routerLink]="['/publications']">Leia nossas publicações</a></li>
@@ -37,10 +39,9 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12">
                     <div class="card">
-                        <h5 class="home-title" style="border-left: 8px solid #4490bc">Casos Exemplares</h5>
+                        <h5 class="home-title" style="border-left: 8px solid #4490bc">As Cidades e os Bairros</h5>
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
-                                <h5 style="color:black">As Cidades e o Bairros</h5>
                                 <p>Nossos estudos calcuam a velocidade de propagação das infecções a partir de dados como a densidade demográfica, o índice de desenvolvimento humano (IDH) 
                                     e a oferta de equipamentos urbanos.
                                 </p>
@@ -76,8 +77,7 @@
                     <div class="card">
                         <h5 class="home-title" style="border-left: 8px solid #5eb990">Simulador</h5>
                         <p>
-                            A partir dos principais modelos epidemiológicos, criamos um simulador do avanço das infecções. A ferramenta pode ser usada por todos os brasileiros
-                            para estimar como a doença pode afetar sua região e entornos.
+                            A partir dos principais modelos epidemiológicos, criamos um simulador para reproduzir e visualizar cenários do avanço das infecções. A ferramenta pode ser usada por todos os brasileiros para estimar como a doença pode afetar sua região e entornos.
                         </p>
                         <ul class="list-unstyled">
                             <li><a [routerLink]="['/dash']">Faça sua própria simulação</a></li>
@@ -91,10 +91,9 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="card">
                         <h5 class="home-title" style="border-left: 8px solid #ea637d">Na Midia</h5>
-                        
                         <div class="list-group">
                             <div  *ngFor="let midia of allpublicity; let i = index">
-                                <div *ngIf="i<3">
+                                <div *ngIf="i<5">
                                     
                                     <a href="{{midia.link}}" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="d-flex w-100 justify-content-between">
@@ -118,9 +117,8 @@
                         
                         <ngx-twitter-timeline 
                         [data]="{sourceType: 'url', url: 'https://twitter.com/AcaoCovid'}"
-                        [opts]="{tweetLimit: 3}">
+                        [opts]="{tweetLimit: 3, height: 200, chrome: ['noheader']}">
                         </ngx-twitter-timeline>
-
                 </div>
             </div>
         </div>
