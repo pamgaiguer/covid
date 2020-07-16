@@ -20,6 +20,7 @@ import { Note3Component } from './publications/note3/note3.component';
 import { Note4Component } from './publications/note4/note4.component';
 
 import * as $ from "jquery";
+import { Note5Component } from './publications/note5/note5.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import * as $ from "jquery";
     Note2Component,
     Note3Component,
     Note4Component,
+    Note5Component,
   ],
   imports: [
     BrowserModule,

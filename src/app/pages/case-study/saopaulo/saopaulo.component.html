@@ -43,143 +43,135 @@
                         <p>
                             6. Também foram feitos testes com o cenário em que se adotasse o lockdown na cidade a partir do dia 20 de Maio de 2020, durando entre 15 e 20 dias. Os resultados são uma redução do nº de infectados em até 14% e de óbitos em até 46% (ou 3778 vidas salvas).
                         </p>
-
+                        
                         <h3>1. Introdução</h3>
-                        <p>Neste estudo, utilizou-se o modelo <a href="https://acaocovid19.org/dash">MD Corona</a> para simular a dinâmica da dispersão do vírus para a Cidade de São Paulo. Com base no <a href="https://acaocovid19.org/publications/note3">Índice de Proteção à Covid-19</a> (IPC = 0,79 São Paulo - alto), na densidade demográfica da cidade (8.054,7 hab./km²) e considerando o índice de adesão ao isolamento social (histórico médio do isolamento) no Município de São Paulo divulgado pelo Portal <a href="https://www.saopaulo.sp.gov.br/coronavirus/isolamento/">“SP contra o novo coronavírus”</a>, tivemos os seguintes resultados.</p>
-                        <a class="text-right" href="#topo">Voltar ao Topo</a>
+                        <p>Neste estudo, utilizou-se o modelo <a href="" [routerLink]="['/saopaulo']">MD Corona</a> para simular a dinâmica da dispersão do vírus para a Cidade de São Paulo. Com base no <a href="./assets/articles/2506_Artigo_IPC19.pdf" target="_blank">Índice de Proteção à Covid-19</a> (IPC = 0,79 São Paulo - alto), na densidade demográfica da cidade (8.054,7 hab./km²) e considerando o índice de adesão ao isolamento social (histórico médio do isolamento) no Município de São Paulo divulgado pelo Portal <a href="https://www.saopaulo.sp.gov.br/coronavirus/isolamento/">“SP contra o novo coronavírus”</a>, tivemos os seguintes resultados.</p>
+                        <!-- <a class="text-right" href="#topo">Voltar ao Topo</a> -->
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <div id="historico" class="card">
-                            <h3>2. Tendência da curva epidêmica no Município de São Paulo</h3>
-                            
+                    <div id="historico" class="card">
+                        <h3>2. Tendência da curva epidêmica no Município de São Paulo</h3>
+                        <p>
+                            Implementando o histórico de distanciamento social (ou “isolamento”) no modelo MD Corona (vide Tabela 1), obtivemos para o 118º dia após o primeiro caso da Covid-19 relatado na cidade o resultado de 9,38% da população infectada e 0,08% de pessoas mortas pela doença (ou 0,75% do total de infectados). Este resultado faz parte da calibragem do modelo e é compatível com:
+                        </p>
+                        <p>
+                            a. O estudo de <a href="https://g1.globo.com/sp/sao-paulo/noticia/2020/06/23/95percent-dos-moradores-da-cidade-de-sp-tiveram-contato-com-covid-19-diz-pesquisa-da-prefeitura.ghtml">soroprevalência realizado no dia 22 de Junho de 2020</a>, em que se verificou que 9,5% da população do Município já teve contato com o novo cornavírus (o intervalo de confiança destes dados está entre 8% e 11,4%)
+                        </p>
+                        <p>
+                            b. O estudo de <a href="https://www.monitoramentocovid19.org/">soroprevalência realizado entre os dias 16 e 24 de Junho</a>, que obteve um intervalo entre 9.2% e 13.6 %.
+                        </p>
+                        <p>
+                            A característica estocástica do modelo faz com que exista uma variação das curvas de contaminação, dependendo da condição inicial do simulador. Por isso, apresentamos a curva média obtida (de 100 simulações), que pode ser vista nos gráficos abaixo, tanto para a porcentagem dos casos diários quanto para a porcentagem de óbitos diários resultantes da contaminação da Covid-19.
+                        </p>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-2"></div>
+                            <div class="col-sm-12 col-md-10">
+                                
+                                <figure>
+                                    <img src="./assets/img/saopaulo/figure1.png" class="mapa-saopaulo">
+                                    <br>
+                                    <figcaption class="figure-caption">
+                                        Figura 1. Dinâmica da Dispersão do vírus na Cidade de São Paulo - calibragem com a pesquisa de soroprevalência de 22/06/20
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <caption>Tabela 1 - Histórico do “isolamento social” no Município de São Paulo</caption>
+                                <caption>Fonte: São Paulo contra o Novo Coronavírus - retirado no dia 10/07/20</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Data</th>
+                                        <th>25-Fev</th>
+                                        <th>17-Mar</th>
+                                        <th>21-Mar</th>
+                                        <th>12-Abr</th>
+                                        <th>3-Maio</th>
+                                        <th>31-Maio</th>
+                                        <th>22-Jun</th>
+                                        <th>12-Jul</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Descrição</th>
+                                        <td>Primeiro caso</td>
+                                        <td>Isolamento voluntário</td>
+                                        <td>Redução oficial das atividades</td>
+                                        <td>Cai (efeito Bolsonaro)</td>
+                                        <td>Cai mais  (efeito Bolsonaro)</td>
+                                        <td>Plano São Paulo</td>
+                                        <td>2º Pesquisa Soroprv. 9.5%</td>
+                                        <td>Abertura- fase amarela</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dist. Social</th>
+                                        <td>27%</td>
+                                        <td>43%</td>
+                                        <td>58%</td>
+                                        <td>53%</td>
+                                        <td>51%</td>
+                                        <td>48%</td>
+                                        <td>46%</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Número de dias</th>
+                                        <td>21</td>
+                                        <td>4</td>
+                                        <td>22</td>
+                                        <td>21</td>
+                                        <td>28</td>
+                                        <td>22</td>
+                                        <td>20</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                             <p>
-                                Implementando o histórico de distanciamento social (ou “isolamento”) no modelo MD Corona (vide Tabela 1), obtivemos para o 118º dia após o primeiro caso da Covid-19 relatado na cidade o resultado de 9,38% da população infectada e 0,08% de pessoas mortas pela doença (ou 0,75% do total de infectados). Este resultado faz parte da calibragem do modelo e é compatível com:
+                                Os resultados das simulações, ilustrados na Figura 1, podem indicar uma ideia contra-intuitiva. Neste momento, dia 12 de Julho de 2020, no Município de São Paulo é possível estar acontecendo uma redução do número de casos e óbitos diários e uma consequente desocupação dos leitos, ao mesmo tempo em que cai o índice de distanciamento social. Chama atenção que isto estaria  ocorrendo antes de se atingir a chamada “imunidade de rebanho”.
                             </p>
-                            <p>
-                                <p>
-                                    a. O estudo de <a href="https://g1.globo.com/sp/sao-paulo/noticia/2020/06/23/95percent-dos-moradores-da-cidade-de-sp-tiveram-contato-com-covid-19-diz-pesquisa-da-prefeitura.ghtml">soroprevalência realizado no dia 22 de Junho de 2020</a>, em que se verificou que 9,5% da população do Município já teve contato com o novo cornavírus (o intervalo de confiança destes dados está entre 8% e 11,4%)
-                                </p>
-                            </p>
-                            <p>
-                                <p>
-                                    b. O estudo de <a href="https://www.monitoramentocovid19.org/">soroprevalência realizado entre os dias 16 e 24 de Junho</a>, que obteve um intervalo entre 9.2% e 13.6 %.
-                                </p>
-                            </p>
-                            <p>A característica estocástica do modelo faz com que exista uma variação das curvas de contaminação, dependendo da condição inicial do simulador. Por isso, apresentamos a curva média obtida (de 100 simulações), que pode ser vista nos gráficos abaixo, tanto para a porcentagem dos casos diários quanto para a porcentagem de óbitos diários resultantes da contaminação da Covid-19.                            </p>
                             <div class="row">
-                                <div class="col-sm-12 col-md-4"></div>
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-10">
                                     
                                     <figure>
-                                        <img src="./assets/img/saopaulo/figure1.png" class="img-fluid mapa-saopaulo">
+                                        <img src="./assets/img/saopaulo/figure2.png" class="mapa-saopaulo">
                                         <br>
                                         <figcaption class="figure-caption">
-                                            Figura 1. Dinâmica da Dispersão do vírus na Cidade de São Paulo - calibragem com a pesquisa de soroprevalência de 22/06/20
+                                            Figura 2. MD Corona em uma das simulações do caso do Município do São Paulo (bolhas de proteção).
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="col-sm-12 col-md-4"></div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-striped">
-                                    <caption>Tabela 1 - Histórico do “isolamento social” no Município de São Paulo</caption>
-                                    <caption>Fonte: São Paulo contra o Novo Coronavírus - retirado no dia 10/07/20</caption>
-                                    <thead>
-                                        <tr>
-                                            <th>Data</th>
-                                            <th>25-Fev</th>
-                                            <th>17-Mar</th>
-                                            <th>21-Mar</th>
-                                            <th>12-Abr</th>
-                                            <th>3-Maio</th>
-                                            <th>31-Maio</th>
-                                            <th>22-Jun</th>
-                                            <th>12-Jul</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>Descrição</th>
-                                            <td>Primeiro caso</td>
-                                            <td>Isolamento voluntário</td>
-                                            <td>Redução oficial das atividades</td>
-                                            <td>Cai (efeito Bolsonaro)</td>
-                                            <td>Cai mais  (efeito Bolsonaro)</td>
-                                            <td>Plano São Paulo</td>
-                                            <td>2º Pesquisa Soroprv. 9.5%</td>
-                                            <td>Abertura- fase amarela</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Dist. Social</th>
-                                            <td>27%</td>
-                                            <td>43%</td>
-                                            <td>58%</td>
-                                            <td>53%</td>
-                                            <td>51%</td>
-                                            <td>48%</td>
-                                            <td>46%</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Número de dias</th>
-                                            <td>21</td>
-                                            <td>4</td>
-                                            <td>22</td>
-                                            <td>21</td>
-                                            <td>28</td>
-                                            <td>22</td>
-                                            <td>20</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p>
-                                    Os resultados das simulações, ilustrados na Figura 1, podem indicar uma ideia contra-intuitiva. Neste momento, dia 12 de Julho de 2020, no Município de São Paulo é possível estar acontecendo uma redução do número de casos e óbitos diários e uma consequente desocupação dos leitos, ao mesmo tempo em que cai o índice de distanciamento social. Chama atenção que isto estaria  ocorrendo antes de se atingir a chamada “imunidade de rebanho”.
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-4"></div>
-                                    <div class="col-sm-12 col-md-4">
-                                        
-                                        <figure>
-                                            <img src="./assets/img/saopaulo/figure2.png" class="img-fluid mapa-saopaulo">
-                                            <br>
-                                            <figcaption class="figure-caption">
-                                                Figura 2. MD Corona em uma das simulações do caso do Município do São Paulo (bolhas de proteção).
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4"></div>
+                            <p>
+                                É possível observar na grade do modelo (circulado em amarelo na Figura 2) que existem bolhas de proteção ao contágio do coronavírus (pessoas vermelhas concentradas e rodeadas de pessoas cinzas). Este comportamento segue a mesma lógica de um esgotamento da rede de contágio em diversos subambientes. Isso ocorre após a presença do vírus em uma parcela da população durante um período de tempo relativamente longo (138 dias desde o 1º caso registrado em 25 de Fevereiro de 2020). Isto é suficiente para diminuir a velocidade de contágio no ambiente. É importante destacar que essa dinâmica é bastante exclusiva para uma densidade compatível com a do Município como um todo, sem levar em consideração as especificidades demográficas e o Índice de Proteção ao Coronavírus (IPC) dos diferentes distritos.
+                            </p>
+                            <h4>Cenário 0 - reduzindo e fixando o índice de distanciamento social para 20% por mais 100 dias após o dia 12 de Julho de 2020.
+                            </h4>
+                            <p>
+                                Neste cenário, implementamos o histórico oficial de distanciamento social divulgado pela secretaria do Estado de São Paulo (descrito na Tabela 1) e adicionamos uma hipótese de queda no índice para 20% para os próximos 100 dias, a partir de 12 de Julho. 
+                            </p>
+                            <p>
+                                A Figura 3, com a curva média para 238 dias de simulação, mostra uma tendência de queda para o número de casos, mesmo com uma redução drástica do isolamento social. Reforça-se, assim, a hipótese de bolhas de proteção e esgotamento das redes de contaminação. A simulação mostra ainda que o total de infectados para o 238º dia após o primeiro caso da Covid-19 seria um pouco maior do que na data da calibração (como esperado), com 12,71% de infectados e 0,12% da população morta pela Covid19 (ou seja, 0,9% de letalidade).                                    
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-10">
+                                    
+                                    <figure>
+                                        <img src="./assets/img/saopaulo/figure3.png" class="mapa-saopaulo">
+                                        <br>
+                                        <figcaption class="figure-caption">
+                                            Figura 3. Resultado da simulação com o MD Corona para o cenário zero com o histórico de distanciamento social do município de São Paulo acrescido de 100 dias com isolamento a 20%. 
+                                        </figcaption>
+                                    </figure>
                                 </div>
-                                <p>
-                                    É possível observar na grade do modelo (circulado em amarelo na Figura 2) que existem bolhas de proteção ao contágio do coronavírus (pessoas vermelhas concentradas e rodeadas de pessoas cinzas). Este comportamento segue a mesma lógica de um esgotamento da rede de contágio em diversos subambientes. Isso ocorre após a presença do vírus em uma parcela da população durante um período de tempo relativamente longo (138 dias desde o 1º caso registrado em 25 de Fevereiro de 2020). Isto é suficiente para diminuir a velocidade de contágio no ambiente. É importante destacar que essa dinâmica é bastante exclusiva para uma densidade compatível com a do Município como um todo, sem levar em consideração as especificidades demográficas e o Índice de Proteção ao Coronavírus (IPC) dos diferentes distritos.
-                                </p>
-                                <h4>Cenário 0 - reduzindo e fixando o índice de distanciamento social para 20% por mais 100 dias após o dia 12 de Julho de 2020.
-                                </h4>
-                                <p>
-                                    Neste cenário, implementamos o histórico oficial de distanciamento social divulgado pela secretaria do Estado de São Paulo (descrito na Tabela 1) e adicionamos uma hipótese de queda no índice para 20% para os próximos 100 dias, a partir de 12 de Julho. 
-                                </p>
-                                <p>
-                                    A Figura 3, com a curva média para 238 dias de simulação, mostra uma tendência de queda para o número de casos, mesmo com uma redução drástica do isolamento social. Reforça-se, assim, a hipótese de bolhas de proteção e esgotamento das redes de contaminação. A simulação mostra ainda que o total de infectados para o 238º dia após o primeiro caso da Covid-19 seria um pouco maior do que na data da calibração (como esperado), com 12,71% de infectados e 0,12% da população morta pela Covid19 (ou seja, 0,9% de letalidade).                                    
-                                </p>
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-4"></div>
-                                    <div class="col-sm-12 col-md-4">
-                                        
-                                        <figure>
-                                            <img src="./assets/img/saopaulo/figure3.png" class="img-fluid mapa-saopaulo">
-                                            <br>
-                                            <figcaption class="figure-caption">
-                                                Figura 3. Resultado da simulação com o MD Corona para o cenário zero com o histórico de distanciamento social do município de São Paulo acrescido de 100 dias com isolamento a 20%. 
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4"></div>
-                                </div>
-                            <a class="text-right" href="#topo">Voltar ao Topo</a>
+                            </div>
+                            <!-- <a class="text-right" href="#topo">Voltar ao Topo</a> -->
                         </div>
-                        <div id="politicas" class="card">
+
+                        <div id="politicas">
                             <h3>2. Simulando a hipótese de reintrodução de um agente contaminado no modelo na cidade no dia 13 de Julho de 2020.                            </h3>
                             <p>
                                 Neste cenário, introduzimos no modelo um agente infectado com o novo coronavírus (o equivalente a 0,27% da população do Município de São Paulo) aleatoriamente na grade, a partir do 138º dia da simulação (equivale ao dia 13 de Julho de 2020) para simular o efeito de novos contaminados entrando no Município. Estamos considerando também uma possível redução do distanciamento social, resultante da passagem da cidade para a fase amarela do Plano São Paulo (relaxamento das restrições de isolamento).
@@ -189,41 +181,39 @@
                                 A reintrodução aleatória (dentro do ambiente espacial do modelo) de um agente contaminado tem o efeito de estourar as bolhas de proteção, resultando numa segunda onda de contaminação. Neste cenário a segunda onda pode ser mais alta do que a primeira, indicando adicionalmente uma elevação do risco de colapso do sistema de saúde. Ao final de 238 dias simulados, teríamos 19,67% da população infectada pelo coronavírus e 0,18% de óbitos (0,92% de letalidade).
                             </p>
                             <div class="row">
-                                <div class="col-sm-12 col-md-4"></div>
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-10">
                                     
                                     <figure>
-                                        <img src="./assets/img/saopaulo/figure4.png" class="img-fluid mapa-saopaulo">
+                                        <img src="./assets/img/saopaulo/figure4.png" class="mapa-saopaulo">
                                         <br>
                                         <figcaption class="figure-caption">
                                             Figura 4. Dinâmica da Dispersão do vírus na Cidade de São Paulo - Histórico real (tabela 1), reintrodução de um agente infectado e redução do distanciamento social para 20%.
- 
+                                            
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="col-sm-12 col-md-4"></div>
                             </div>
                             <h4>Cenário 2 - reintrodução no 138º dia e queda do índice de distanciamento social médio para 40% (abertura total) por mais 100 dias.                            </h4>
                             <p>
                                 A reintrodução aleatória (dentro do ambiente espacial do modelo) de um agente contaminado neste caso também estoura as bolhas de proteção, gerando novas ondas. Porém, por conta do distanciamento social seguir em patamar mais alto (40%) do que o cenário anterior (20%), a segunda onda é quase sempre inferior à primeira. Ao final de 238 dias simulados, teríamos 15,07% da população infectada pelo coronavírus e 0,13% de óbitos (1,95% do total de infectados).
                             </p>
                             <div class="row">
-                                <div class="col-sm-12 col-md-4"></div>
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-10">
                                     
                                     <figure>
-                                        <img src="./assets/img/saopaulo/figure5.png" class="img-fluid mapa-saopaulo">
+                                        <img src="./assets/img/saopaulo/figure5.png" class="mapa-saopaulo">
                                         <br>
                                         <figcaption class="figure-caption">
                                             Figura 5. Dinâmica da Dispersão do vírus na Cidade de São Paulo - Histórico real (tabela 1), reintrodução de um agente infectado e redução do distanciamento social para 40%.
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="col-sm-12 col-md-4"></div>
                             </div>
-                            <a class="text-right" href="#topo">Voltar ao Topo</a>
+                            <!-- <a class="text-right" href="#topo">Voltar ao Topo</a> -->
                         </div>
-                        <div id="politicas2" class="card">
+                        <div id="politicas2" >
                             <h3>3) Simulando a hipótese de lockdown na cidade de São Paulo em Maio e, em seguida, a adoção do Plano São Paulo.                            </h3>
                             <p>
                                 Testamos um cenário em que o governo do Estado de São Paulo adotaria o lockdown no dia 20 de Maio de 2020, isto é, o momento em que o <a href="https://g1.globo.com/sp/sao-paulo/noticia/2020/05/20/governo-fara-esforco-em-feriado-para-evitar-medidas-duras-se-indices-crescerem-seremos-obrigados-a-colocar-lockdow-diz-doria.ghtml">governador ameaçou fazê-lo</a>, caso a população não atingisse o nível ótimo de distanciamento social e em seguida tivesse reaberto a economia, seguindo as diretrizes do Plano São Paulo (o que teria influência no índice de distanciamento social.
@@ -284,18 +274,17 @@
                                 </tbody>
                             </table>
                             <div class="row">
-                                <div class="col-sm-12 col-md-4"></div>
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-10">
                                     
                                     <figure>
-                                        <img src="./assets/img/saopaulo/figure6.png" class="img-fluid mapa-saopaulo">
+                                        <img src="./assets/img/saopaulo/figure6.png" class="mapa-saopaulo">
                                         <br>
                                         <figcaption class="figure-caption">
                                             Figura 6. Dinâmica da Dispersão do vírus na Cidade de São Paulo - Lockdown de 15 dias a partir de 20 de Maio.
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="col-sm-12 col-md-4"></div>
                             </div>
                             <h4>Cenário 4 - Lockdown de 20 dias com isolamento social médio da cidade chegando a 70% da população                            </h4>
                             <p>
@@ -353,29 +342,28 @@
                                 </tbody>
                             </table>
                             <div class="row">
-                                <div class="col-sm-12 col-md-4"></div>
-                                <div class="col-sm-12 col-md-4">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-10">
                                     
                                     <figure>
-                                        <img src="./assets/img/saopaulo/figure7.png" class="img-fluid mapa-saopaulo">
+                                        <img src="./assets/img/saopaulo/figure7.png" class="mapa-saopaulo">
                                         <br>
                                         <figcaption class="figure-caption">
                                             Figura 7. Dinâmica da Dispersão do vírus na Cidade de São Paulo - Lockdown de 20 dias a partir de 20 de Maio.
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="col-sm-12 col-md-4"></div>
                             </div>
-                            <a class="text-right" href="#topo">Voltar ao Topo</a>
+                            <!-- <a class="text-right" href="#topo">Voltar ao Topo</a> -->
                         </div>
-                        <div id="conclusao" class="card">
+                        <div id="conclusao" >
                             <h3>4. Conclusão</h3>
                             <p>As simulações baseadas no modelo MD Corona do grupo Ação Covid-19 indicam que neste momento (dia 12 de Julho de 2020) estaria ocorrendo uma redução do número de casos e óbitos no Município de São Paulo, concordando com a tendência de desocupação dos leitos apresentada pelos dados oficiais do Estado (SP contra o novo coronavírus). Este resultado é contra-intuitivo, pois se esperaria que a abertura da economia, somada a uma leve queda do índice de distanciamento social, levasse ao aumento da curva de contaminação, uma vez que o município está longe de atingir a chamada imunidade coletiva (rebanho) (vide as pesquisas de soroprevalência realizadas no Município na segunda quinzena do mês de Junho).</p>
                             <p>O modelo indica que existem “bolhas de proteção” ao contágio do coronavírus, ou seja, apesar de existirem pessoas suscetíveis ao contágio pelo vírus, elas estariam isoladas por uma barreira de pessoas imunes. Outra forma de explicar este fenômeno seria a ideia de um esgotamento da rede de contágio do vírus mesmo após uma agudização inicial do surto pandêmico, porque o distanciamento social somado a práticas de prevenção do contágio (agora generalizadas na sociedade) garantiriam uma diminuição da velocidade de contágio ou mesmo a supressão do vírus no ambiente. Mas dado o baixo número de pessoas imunes no sistema, essa redução configura um equilíbrio instável.</p>
                             <p>Estas bolhas de proteção podem vir a estourar ou as redes podem ser reiniciadas, ou seja, novas ondas de contaminação podem ocorrer caso o isolamento social caia muito ou haja uma reintrodução do vírus em regiões da cidade onde poucos agentes foram contaminados e, portanto, não se tornaram imunes à doença. A previsão destes “estouros” é extremamente difícil sem uma política de testagem em massa da população nos diferentes distritos do Município.</p>
                             <p>Na prática, o que pode vir a acontecer é uma espécie de Dinâmica de Interiorização Urbana (DIU*) do vírus, ou seja, dinâmicas locais num mesmo territórios gerando novos surtos de contaminação (e imunização) numa mesma cidade. O vírus estaria sendo passado de locais e populações que já tiveram um certo contato com o vírus para outros agentes e locais onde isto ainda não ocorreu.</p>
                             <p>Também foram feitos testes com o cenário em que se adotasse o lockdown na cidade a partir do dia 20 de Maio de 2020, durando entre 15 e 20 dias. Os resultados aponta para uma redução do nº de infectados em até 14% e de óbitos em até 46% (ou 3778 vidas salvas).</p>
-                            <a class="text-right" href="#topo">Voltar ao Topo</a>
+                            <!-- <a class="text-right" href="#topo">Voltar ao Topo</a> -->
                         </div>
                     </div>
                 </div>

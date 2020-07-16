@@ -27,13 +27,14 @@ import { Note1Component } from './publications/note1/note1.component'
 import { Note2Component } from './publications/note2/note2.component'
 import { Note3Component } from './publications/note3/note3.component'
 import { Note4Component } from './publications/note4/note4.component'
+import { Note5Component } from './publications/note5/note5.component'
 
 const routes: Routes =[
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home',    component: HomeComponent },
   { path: 'copacabana',    component: CopacabanaComponent },
   { path: 'fortaleza',    component: FortalezaComponent },
-  // { path: 'saopaulo',    component: SaopauloComponent },
+  { path: 'saopaulo',    component: SaopauloComponent },
   { path: 'dash',       component: DashComponent },
   { path: 'howtouse',    component: HowtouseComponent },
   { path: 'howtoact',    component: HowToActComponent },
@@ -61,6 +62,10 @@ const routes: Routes =[
     {
       path: 'note4',
       component: Note4Component
+    },
+    {
+      path: 'note5',
+      component: Note5Component
     },
     {
       path: 'article1',
