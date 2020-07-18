@@ -4,6 +4,9 @@ $red-main:                  rgba(#EB392C, .98);
 $red-light:                  rgba(#F73C2F, .98);
 $red-dark:                  rgba(#AB2A20, .98);
 
+html{
+    scroll-behavior: smooth;
+}
 
 /*html tags*/
 body{
