@@ -4,6 +4,9 @@ $red-main:                  rgba(#EB392C, .98);
 $red-light:                  rgba(#F73C2F, .98);
 $red-dark:                  rgba(#AB2A20, .98);
 
+html{
+    scroll-behavior: smooth;
+}
 
 /*html tags*/
 body{
@@ -231,6 +234,19 @@ textarea{
         // width: 100vw;
         text-align: center;
     }
+    .indice{
+        li{
+            font-weight: 700;
+            margin: 15px 0;
+        }
+    }
+    .saopaulo-img{
+        width: 85%;
+    }
+    .graficos{
+        width:100%;
+    }
+    
 }
 
 .dash{
