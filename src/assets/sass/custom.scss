@@ -189,20 +189,11 @@ textarea{
         }
     }
 }
-.copacabana, .fortaleza{
+.copacabana, .fortaleza, .saopaulo{
     p{
         text-align: justify;
     }
     .table1{
-        caption{
-            padding-bottom: 0;
-            padding-top: 0;
-        }
-        thead tr th,tbody tr td{
-            text-align: center;
-        }
-    }
-    .table2{
         caption{
             padding-bottom: 0;
             padding-top: 0;
@@ -216,39 +207,14 @@ textarea{
             margin: 15px 0;
         }
     }
-}
-.saopaulo{
-    caption{
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-    .references{
-        li{
-            margin: 15px 0;
-        }
-    }
-    p{
-        text-align: justify;
-    }
-    .mapa-saopaulo{
-        // width: 100vw;
-        text-align: center;
-    }
-    .indice{
+    .indice, .glossario{
         li{
             font-weight: 700;
             margin: 15px 0;
+            text-align: justify;
         }
     }
-    .saopaulo-img{
-        width: 85%;
-    }
-    .graficos{
-        width:100%;
-    }
-    
 }
-
 .dash{
     .dash-spacer{
         margin-bottom: 10px;
