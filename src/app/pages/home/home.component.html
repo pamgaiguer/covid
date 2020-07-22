@@ -108,7 +108,7 @@
                         <h5 class="home-title" style="border-left: 8px solid #ea637d">Na Midia</h5>
                         <div class="list-group">
                             <div  *ngFor="let midia of allpublicity; let i = index">
-                                <div *ngIf="i<5">
+                                <div *ngIf="i<10">
                                     
                                     <a href="{{midia.link}}" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="d-flex w-100 justify-content-between">
@@ -127,12 +127,12 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div class="card">
+                    <div class="card twitter-widget">
                         <h5 class="home-title" style="border-left: 8px solid #ea623d">Redes Sociais</h5>
                         
                         <ngx-twitter-timeline 
                         [data]="{sourceType: 'url', url: 'https://twitter.com/AcaoCovid'}"
-                        [opts]="{tweetLimit: 3, height: 200, chrome: ['noheader']}">
+                        [opts]="{tweetLimit: 3, height: 100, chrome: ['noheader']}">
                         </ngx-twitter-timeline>
                 </div>
             </div>
