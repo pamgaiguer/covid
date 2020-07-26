@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { publicity } from './publicity'
 
-
 @Component({
   selector: 'app-publicity',
   templateUrl: './publicity.component.html',

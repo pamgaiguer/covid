@@ -39,120 +39,28 @@
                         <h4>Equipe:</h4>
                         
                         <!-- <li>
-                            <a class="researcher" target="_blank" href="#">[NAME] <i class="fas fa-external-link-alt"></i></a>
+                            <a class="researcher" target="_blank" href="#">[NAME]</a>
                             <p>[BIO]</p>
                         </li> -->
                         
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
                                 <ul class="list-unstyled">
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/0107630830900915">Alexandre Becker <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Mestrando em Economia Política Mundial na UFABC, Bacharel em Ciência e Tecnologia e Bacharel em Neurociências pela mesma instituição.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/5913369787997553">Alexis Saludjian <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Economia UFRJ. Crescimento e Desenvolvimento Econômico, e Economia Internacional atuando principalmente nos seguintes temas: Desenvolvimento Econômico, Economia Política e História do Pensamento Econômico, Economia Internacional, Integração econômica regional e Teoria econômica.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="#">Ana Claudia Andreotti <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Mestre em Políticas Públicas na UFABC. </p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/4671276183191204">Bruna Gaudencio Guimarães <i class="fas fa-external-link-alt"></i></a>
-                                        <p>MIT MicroMasters in Data, Economics and Development Policy. Bacharelado em Relações Internacionais e Ciências e Humanidades pela UFABC. Consultora de Analytics e pesquisadora em Biossegurança.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4766864A3">Carlos da Silva dos Santos <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Processamento de Imagens, Reconhecimento de Padrões, Análise de Componentes Independentes, Teoria da Informação.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/7926761314005188">Diana Maritza Segura Angel <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Doutorado em Ciências pela Universidade de São Paulo, desenvolveu sua pesquisa experimental na multinacional Tongaat Hulett na África do Sul. Áreas de interesse: Sistemas fotovoltaicos, eficiência energética, termodinâmica, física, estatística, análise de dados e mecânica dos fluidos.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/3707731487652877">Diego Soares Viana de Oliveira  <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Doutor em Humanidades pela Universidade de São Paulo, mestre em Filosofia pela Universidade Paris X - Nanterre, economista pela Universidade de São Paulo. Experiência em comunicação social e filosofia das ciências humanas</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="https://www.linkedin.com/in/eric-ayr%C3%A3o-de-castro-3018bb17a/">Eric Ayrão de Castro <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Graduando em Ciências Econômicas pela UFRJ e ex-graduando em Engenharia de Controle de Automação também pela UFRJ. Interesse e experiência na área de tratamento e análise de dados.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/8582022219085253">Fábio Godoy Ferreira <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Mestrando em Engenharia de Energia na UFABC. Experiência na área de análise de dados, machine learning e modelos de planejamento/precificação de energia elétrica. </p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/2249781288255030">Fábio Henrique Bittes Terra  <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Professor da UFABC e do PPGE-UFU. Pesquisador do CNPq. Pesquisa em macroeconomia, política econômica, teoria econômica e economia brasileira.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="#">Giovanna Arícia Dagel Souza <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Graduanda no Bacharelado em Relações Internacionais pela Universidade Federal do ABC. Apreço e desenvolvimento atual pela área de comunicação digital, especificamente em produção gráfica para redes sociais e design de interfaces.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/0171085587279213">Guilherme Prado Almeida De Souza <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Mestre em Ciências Humanas e Sociais pela Universidade Federal do ABC na linha de Economia e Desenvolvimento. Áreas de interesse: Economia ecológica, Limites Sociais e Ecológicos do Crescimento, Alternativas Sistêmicas. Constrói o projeto de Economia Solidária Livres Rede de Produção e Consumo Consciente.</p>
+                                    <li *ngFor="let sobre of allaboutus; let i = index">
+                                        <div *ngIf="i<14">
+                                            <a class="researcher" target="_blank" href="{{sobre.link}}">{{sobre.name}}</a>
+                                            <p>{{sobre.bio}}</p>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <ul class="list-unstyled">
-                                    <li>
-                                        <a class="researcher" target="_blank" href="https://www.linkedin.com/in/igor-renato-louro-bruno-de-abreu-92228744/">Igor Renato Louro Bruno de Abreu  <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Especializado em cirurgia torácica, em especial tem grande experiência com tumores torácicos. Trabalha em diversos hospitais, em sua maioria no SUS, está na linha de frente desde o início da pandemia (nunca saiu).</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/2481434048339566">João Pedro Loureiro Braga <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Graduando em Ciências Econômicas pela Universidade Federal do Rio de Janeiro (UFRJ). Estuda as áreas de desenvolvimento e desigualdades socioeconômicas, bem-estar e economia chinesa.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4138649Z1">José Paulo Guedes Pinto <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Sistemas complexos, crise econômica, ecologia urbana, economia política, economia da colaboração em massa, modelos dinâmicos, propriedade intelectual.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/8906159304582048">Juliana Santos Oliveira <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Graduanda em Ciências e Humanidades e Ciências Econômicas na Universidade Federal do ABC. Experiência em pesquisa acadêmica nas áreas de Ciência Política e Economia e nas sub áreas de Estado, Democracia, Estado de Bem Estar Social, Política Externa e Finanças Públicas.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/2650858119455746">Leonardo Freire de Mello <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Planejamento, ambiente e demografia, complexo população-ambiente-consumo, dimensões humanas das mudanças ambientais globais, participação pública nos processos de tomada de decisão.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/8771305776391428">Leonardo Pinto de Magalhães <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Mestrado em Ciências pela Universidade de São Paulo pelo Programa de Engenharia de Sistemas Agrícolas, atualmente no Doutorado pelo mesmo Programa. Pesquisa na área de Visão Computacional aplicada na agricultura, desenvolve projetos na área de Divulgação Científica e se interessa por Meta-Ciência e Ciência Cidadã.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="https://www.linkedin.com/in/luccap/">Lucca Diego Prado <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Graduando no Bacharelado em Neurociência pela Universidade Federal do ABC (UFABC). Experiência na área de Análise de Dados, Aprendizado de Máquina, Redes Neurais Profundas e Visão Computacional.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/6177692858000498">Luiz de Siqueira Martins Filho <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Robótica, satélites artificiais, e controle de sistemas dinâmicos.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/4559907236737788">Maira Begalli <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Doutora em Planejamento e Gestão do Território pela UFABC. Estuda mudanças socioecológicas e ecologia de populações humanas no Antropoceno envolvendo: vulnerabilidade, resiliência e adaptação.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://lattes.cnpq.br/8096747745105128">Maria Carolina Maziviero  <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Doutora em Arquitetura e Urbanismo - Fundamentos Sociais do Urbanismo e da Urbanização (FAUUSP). Professora do Departamento de Arquitetura e Urbanismo da Universidade Federal do Paraná (DAU-UFPR). </p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="https://pamgaiguer.github.io/pamgaiguer/">Pamella Gaiguer Santos <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Bacharel em Sistemas de Informação (Mackenzie/SP). Programação Front-End, UX (User Experience) e UI (User Interface). </p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4592874A0">Patrícia Camargo Magalhães <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Pós-Doutoranda na Universidade de Bristol (Inglaterra) com bolsa de pesquisa Marie Curie da União Europeia. Também é vinculada à colaboração LHCb no CERN. Tem experiência na área de Física com ênfase em fenomenologia de Física de Partículas.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="#">Rudá Lourenço Cabral Fernandez <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Graduando no Bacharelado de Ciência e Tecnologia pela Universidade Federal do ABC, cursando matérias do curso de Engenharia de Gestão. Experiência na área de comunicação por mídias sociais e análise de dados de processos produtivos.</p>
-                                    </li>
-                                    <li>
-                                        <a class="researcher" target="_blank" href="#">Thales Davi Monea Oliveira <i class="fas fa-external-link-alt"></i></a>
-                                        <p>Bacharel em Ciência e Tecnologia e Graduando em Engenharia Aeroespacial pela Universidade Federal do ABC. Estuda modelos de propagadores de Dinâmica de Atitude de Satélites Artificiais.</p>
+                                    <li *ngFor="let sobre of allaboutus; let i = index">
+                                        <div *ngIf="i>=14">
+                                            <a class="researcher" target="_blank" href="{{sobre.link}}">{{sobre.name}}</a>
+                                            <p>{{sobre.bio}}</p>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>  
