@@ -15,6 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CopacabanaComponent } from './pages/case-study/copacabana/copacabana.component';
 import { FortalezaComponent } from './pages/case-study/fortaleza/fortaleza.component';
 import { SaopauloComponent } from './pages/case-study/saopaulo/saopaulo.component';
+import { CuritibaComponent } from './pages/case-study/curitiba/curitiba.component';
 import { HowToActComponent } from './pages/how-to-act/how-to-act.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { PartnersComponent } from './pages/partners/partners.component';
@@ -35,6 +36,7 @@ const routes: Routes =[
   { path: 'copacabana',    component: CopacabanaComponent },
   { path: 'fortaleza',    component: FortalezaComponent },
   { path: 'saopaulo',    component: SaopauloComponent },
+  { path: 'curitiba',    component: CuritibaComponent },
   { path: 'dash',       component: DashComponent },
   { path: 'howtouse',    component: HowtouseComponent },
   { path: 'howtoact',    component: HowToActComponent },
