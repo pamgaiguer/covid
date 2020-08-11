@@ -12,7 +12,7 @@
                 <div class="col-xs-12 col-md-12">
                     <div class="card">
                         <h4 class="text-center">Uma cidade, muitas curvas: entre Brasilândia, Sapopemba e Jardins</h4>
-
+                        
                         <p>Índice</p>
                         <ol>
                             <a [routerLink] [fragment]="'resumo'"><li>Resumo</li></a>
@@ -43,7 +43,7 @@
                             </figure>
                         </div>
                         
-                        <table class="table table-bordered table-striped table1 table-responsive">
+                        <table class="table table-bordered table-striped table1">
                             <caption>Tabela 1 - Estatísticas resumo das condições de vida nos três distritos*</caption>
                             <caption>Fonte: (IBGE, 2010; SMDU, 2020, Prefeitura de São Paulo, 2020).</caption>
                             <caption> <strong>*</strong> A prefeitura de São Paulo não disponibiliza os dados de isolamento social percentual por distrito/bairro na capital. Os dados em questão foram estimados com base em informações qualitativas levantadas através de reportagens (evidenciadas na seção 1).</caption>
@@ -288,80 +288,82 @@
                             </div>
                         </div>
                         <div class="row justify-content-md-center">
-
+                            
                         </div>
                         <p>
                             Devido ao grande período com baixo isolamento social, no caso de Sapopemba, a imunidade de rebanho é atingida em um isolamento de 70%. Já no Jd. Paulista e na Brasilândia é possível notar o efeito da intensificação do confinamento, que interrompe uma tendência de alta, levando a curva primeiro a estabilização, em um platô, seguida de queda. Após o relaxamento do isolamento (a partir do 108º dia, exibido nas figuras), é notável um novo aumento no número de caso, em ambos distritos. Fica evidente, portanto, que uma reabertura tende a retomada da dinâmica de crescimento da contaminação e dos óbitos.
                             No entanto, é importante enfatizar que essa é a história da cidade de São Paulo e não apenas dos Distritos em específico. 
                         </p>
-                        
-                        <table class="table table-bordered table-striped table1 table-responsive">
-                            <caption>Tabela comparativa dos Cenários e taxas de simulação (200 dias de simulação / 100 simulações):</caption>
-                            <thead>
-                                <tr>
-                                    <th rowspan="2" colspan="1">Cenário</th>
-                                    <th rowspan="2" colspan="1">Intervenção <br>(Isolamento Social)</th>
-                                    <th rowspan="1" colspan="3">
-                                        % Total de Infectados
-                                    </th>
-                                    <th rowspan="1" colspan="3">
-                                        % de Mortos
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>Brasilândia</th>
-                                    <th>Sapopemba</th>
-                                    <th>Jd Paulista</th>
-                                    <th>Brasilândia</th>
-                                    <th>Sapopemba</th>
-                                    <th>Jd Paulista</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>#1</th>
-                                    <td>27%</td>
-                                    <td>86.97</td>
-                                    <td>97.38</td>
-                                    <td>88.23</td>
-                                    <td>1.71</td>
-                                    <td>1.92</td>
-                                    <td>0.85</td>
-                                </tr>
-                                <tr>
-                                    <th>#2</th>
-                                    <td>70%</td>
-                                    <td>40.08</td>
-                                    <td>80.77</td>
-                                    <td>40.09</td>
-                                    <td>0.64</td>
-                                    <td>1.47</td>
-                                    <td>0.32</td>
-                                </tr>
-                                <tr>
-                                    <th>#3</th>
-                                    <td>87%</td>
-                                    <td>x</td>
-                                    <td>38.70</td>
-                                    <td>x</td>
-                                    <td>x</td>
-                                    <td>0.64</td>
-                                    <td>x</td>
-                                </tr>
-                                <tr>
-                                    <th>#4</th>
-                                    <td>27-70-27</td>
-                                    <td>60.18</td>
-                                    <td>85.47</td>
-                                    <td>63.72</td>
-                                    <td>1.10</td>
-                                    <td>1.66</td>
-                                    <td>0.56</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive-sm">
+                            <table class="table table-bordered table-striped table1">
+                                <caption>Tabela comparativa dos Cenários e taxas de simulação (200 dias de simulação / 100 simulações):</caption>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" colspan="1">Cenário</th>
+                                        <th rowspan="2" colspan="1">Intervenção <br>(Isolamento Social)</th>
+                                        <th rowspan="1" colspan="3">
+                                            % Total de Infectados
+                                        </th>
+                                        <th rowspan="1" colspan="3">
+                                            % de Mortos
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>Brasilândia</th>
+                                        <th>Sapopemba</th>
+                                        <th>Jd Paulista</th>
+                                        <th>Brasilândia</th>
+                                        <th>Sapopemba</th>
+                                        <th>Jd Paulista</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>#1</th>
+                                        <td>27%</td>
+                                        <td>86.97</td>
+                                        <td>97.38</td>
+                                        <td>88.23</td>
+                                        <td>1.71</td>
+                                        <td>1.92</td>
+                                        <td>0.85</td>
+                                    </tr>
+                                    <tr>
+                                        <th>#2</th>
+                                        <td>70%</td>
+                                        <td>40.08</td>
+                                        <td>80.77</td>
+                                        <td>40.09</td>
+                                        <td>0.64</td>
+                                        <td>1.47</td>
+                                        <td>0.32</td>
+                                    </tr>
+                                    <tr>
+                                        <th>#3</th>
+                                        <td>87%</td>
+                                        <td>x</td>
+                                        <td>38.70</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>0.64</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th>#4</th>
+                                        <td>27-70-27</td>
+                                        <td>60.18</td>
+                                        <td>85.47</td>
+                                        <td>63.72</td>
+                                        <td>1.10</td>
+                                        <td>1.66</td>
+                                        <td>0.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div id="conclusao" class="card">
+                        <h5>Conclusão</h5>
                         <p>
                             Os resultados deste estudo acerca da metrópole mais populosa do Brasil corroboram a forte vulnerabilidade dos distritos menos desenvolvidos diante da crise sanitária, ressaltando a importância de medidas de isolamento social adaptadas à realidade desses distritos para poupar vidas<sup>3</sup>.
                         </p>

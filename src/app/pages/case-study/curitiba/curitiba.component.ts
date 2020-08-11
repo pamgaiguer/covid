@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { curitiba } from './curitiba_glossario'
 
 @Component({
   selector: 'app-curitiba',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CuritibaComponent implements OnInit {
 
+  curitiba_rodape = curitiba;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
