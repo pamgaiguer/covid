@@ -1,99 +1,99 @@
 export const publicity =[ 
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://radioagencianacional.ebc.com.br/saude/audio/2020-06/sao-paulo-registra-novo-recorde-de-mortes-e-de-novos-casos-de-coronavirus",
+        titulo: "Após flexibilização da quarentena, São Paulo registra novo recorde de mortes e casos de coronavírus",
+        data: "02/06/2020",
+        fonte: "Rádio Agência Nacional"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://movimentorevista.com.br/2020/06/relaxar-a-quarentena-em-sao-paulo-irresponsabilidade-que-matara-milhares/",
+        titulo: "Relaxar a quarentena em São Paulo: irresponsabilidade que matará milhares",
+        data: "02/06/2020",
+        fonte: "Revista Movimento"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://olhardigital.com.br/coronavirus/noticia/mortes-por-covid-19-podem-crescer-150-com-reducao-de-isolamento-social-dizem-cientistas/101647",
+        titulo: "Mortes por Covid-19 podem crescer 150% com redução de isolamento social, dizem cientistas",
+        data: "03/06/2020",
+        fonte: "Olhar Digital"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.esmaelmorais.com.br/2020/06/juristas-acionam-justica-contra-decreto-que-flexibiliza-quarentena-em-sp/",
+        titulo: "Juristas acionam Justiça contra decreto que flexibiliza quarentena em SP",
+        data: "05/06/2020",
+        fonte: "Blog do Esmael"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.esquerdadiario.com.br/Estudos-comprovam-nas-favelas-COVID-mata-10-vezes-mais-Mais-motivos-para-ir-as-ruas-hoje?utm_source=newsletter&utm_medium=email&utm_campaign=Newsletter",
+        titulo: "Estudos comprovam: nas favelas COVID mata 10 vezes mais. Mais motivos para ir às ruas hoje",
+        data: "07/06/2020",
+        fonte: "Esquerda Diário"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.gazetadopovo.com.br/republica/covid-19-brasil-descarta-bons-exemplos-estrategia-reabertura/",
+        titulo: "Brasil descarta “bons exemplos” e se alinha a México em estratégia de reabertura",
+        data: "10/06/2020",
+        fonte: "Gazeta do Povo"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.ovale.com.br/_conteudo/_conteudo/ideias/2020/06/106467--grupos-de-pesquisa-e-entidades-sociais---nota-de-apoio-a-suspensao-da-flexibilizacao-do-comercio-em-jacarei.html",
+        titulo: "Grupos de pesquisa e entidades sociais - Nota de apoio à suspensão da flexibilização do comércio em Jacareí",
+        data: "12/06/2020",
+        fonte: "O Vale"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://portalhospitaisbrasil.com.br/bolhas-de-protecao-reduzem-infeccoes-na-capital-mas-podem-estourar/",
+        titulo: "Bolhas de proteção reduzem infecções na capital, mas podem estourar",
+        data: "16/07/2020",
+        fonte: "Portal Hospitais Brasil"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://dialogosdosul.operamundi.uol.com.br/brasil/65821/na-periferia-de-sp-isolamento-de-87-pouparia-3-600-vidas-somente-em-sapopemba",
+        titulo: "Na periferia de SP, isolamento de 87% pouparia 3.600 vidas somente em Sapopemba",
+        data: "21/07/2020",
+        fonte: "Opera Mundi"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.bbc.com/portuguese/geral-53507755",
+        titulo: "Vídeo da BBC que fala de bolhas de proteção",
+        data: "22/07/2020",
+        fonte: "BBC News"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://radios.ebc.com.br/tarde-nacional/2020/07/grupo-de-pesquisadores-avaliam-exposicao-de-cidades-e-bairros-do-pais-ao",
+        titulo: "Pesquisadores avaliam exposição de cidades e bairros à covid-19",
+        data: "29/07/2020",
+        fonte: "Rádio Nacional BSB"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.bbc.com/portuguese/brasil-53588285",
+        titulo: "3 motivos que explicam por que casos de covid-19 voltaram a crescer no Brasil",
+        data: "31/07/2020",
+        fonte: "BBC News"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://portalvarada.com/saude-beleza/michele-bolsonaro-e-so-mais-uma-dentre-os-26-milhoes-de-infectados-pelo-coronavirus-vida-acao/",
+        titulo: "Michele Bolsonaro é só mais uma dentre os 2,6 milhões de infectados pelo coronavírus – ViDA & Ação",
+        data: "31/07/2020",
+        fonte: "Portal Alvorada"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.msnoticias.com.br/editorias/politica-mato-grosso-sul/entenda-o-porque-esta-sendo-egoista-ao-cobrar-celebracao-do-numero-de/100509/",
+        titulo: "Entenda o porquê está sendo egoísta ao cobrar celebração do número de curados",
+        data: "31/07/2020",
+        fonte: "MS Notícias"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://ultimosegundo.ig.com.br/brasil/2020-07-18/estudo-curvas-de-contaminacao-covid-19-diferentes-em-mesmo-bairro-desigualdade-social.html",
+        titulo: "Estudo mostra que o mesmo bairro pode ter duas curvas de contaminação",
+        data: "18/07/2020",
+        fonte: "Último Segundo (iG)"
     },
     {
-        link: "",
-        titulo: "",
-        data: "",
-        fonte: "",
+        link: "https://www.bbc.com/portuguese/brasil-53642646",
+        titulo: "Flexibilização da quarentena contra coronavírus põe Curitiba na rota do colapso, diz estudo",
+        data: "07/08/2020",
+        fonte: "BBC News"
     },
     {
         link: "https://www.nexojornal.com.br/expresso/2020/07/15/O-estudo-que-fala-em-%E2%80%98bolhas-de-prote%C3%A7%C3%A3o%E2%80%99-na-cidade-de-SP",
@@ -197,7 +197,7 @@ export const publicity =[
         data: "10/06/2020",
         fonte: "Racismo Ambiental",
     },
-
+    
     {
         link: "https://paranaportal.uol.com.br/colunas/coluna-social/rb-covid-19-sao-paulo/amp/",
         titulo: "RB| COVID-19 / São Paulo",
@@ -222,7 +222,7 @@ export const publicity =[
         data: "07/06/2020",
         fonte: "Esquerda Diario",
     },
-
+    
     {
         link: "https://radioagencianacional.ebc.com.br/saude/audio/2020-06/sao-paulo-registra-novo-recorde-de-mortes-e-de-novos-casos-de-coronavirus",
         titulo: "Após flexibilização da quarentena, São Paulo registra novo recorde de mortes e casos de coronavírus",
@@ -259,7 +259,7 @@ export const publicity =[
         data: "31/03/2020",
         fonte: "Brasil País Digital",
     },
-
+    
     {
         link: "https://www.viagginews.com/2020/05/29/la-disuguaglianza-nelle-favelas-brasiliane-aumenta-la-letalita-del-covid19/",
         titulo: "La disuguaglianza eleva la letalità del coronavirus nelle favelas brasiliane",
@@ -338,7 +338,7 @@ export const publicity =[
         data: "01/06/2020",
         fonte: "A Tribuna",
     },
-
+    
     {
         link: "https://monitormercantil.com.br/lockdown-falhara-sem-apoio-as-periferias",
         titulo: "Lockdown falhará sem apoio às periferias",
