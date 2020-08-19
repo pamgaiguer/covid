@@ -20,6 +20,7 @@ import { HowToActComponent } from './pages/how-to-act/how-to-act.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { MethodologyComponent } from './pages/methodology/methodology.component';
+import { SchoolsComponent } from './pages/schools/schools.component';
 
 import { Article1Component } from './publications/article1/article1.component'
 import { Article2Component } from './publications/article2/article2.component'
@@ -38,12 +39,12 @@ const routes: Routes =[
   { path: 'saopaulo',    component: SaopauloComponent },
   { path: 'curitiba',    component: CuritibaComponent },
   { path: 'dash',       component: DashComponent },
+  { path: 'escolas',       component: SchoolsComponent },
   { path: 'howtouse',    component: HowtouseComponent },
   { path: 'howtoact',    component: HowToActComponent },
   { path: 'statistics',    component: StatisticsComponent },
   { path: 'partners',    component: PartnersComponent },
   { path: 'components', component: ComponentsComponent },
-  { path: 'nucleoicons', component: NucleoiconsComponent },
   { path: 'methodology',  component: MethodologyComponent }, 
   { path: 'aboutus',    component: AboutusComponent },
   { path: 'publicity',    component: PublicityComponent },

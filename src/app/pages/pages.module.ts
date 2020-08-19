@@ -28,6 +28,7 @@ import { MethodologyComponent } from './methodology/methodology.component';
 import * as $ from "jquery";
 import { SaopauloComponent } from './case-study/saopaulo/saopaulo.component';
 import { CuritibaComponent } from './case-study/curitiba/curitiba.component';
+import { SchoolsComponent } from './schools/schools.component';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import { CuritibaComponent } from './case-study/curitiba/curitiba.component';
         MethodologyComponent,
         SaopauloComponent,
         CuritibaComponent,
+        SchoolsComponent,
     ]
 })
 export class PagesModule { }
