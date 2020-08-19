@@ -144,6 +144,12 @@ export const aboutus =[
         photo: "",
     },
     {
+        name: "Renan da Rosa Bastos",
+        link: "http://www.renanbastos.com.br/",
+        bio: "Graduado em Tecnologia Análise e Desenvolvimento de Sistemas, amante de tecnologia, inovação e empreendedorismo. Atualmente trabalhando como engenheiro de software.",
+        photo: "",
+    },
+    {
         name: "Rudá Lourenço Cabral Fernandez",
         link: "",
         bio: "Graduando no Bacharelado de Ciência e Tecnologia pela Universidade Federal do ABC, cursando matérias do curso de Engenharia de Gestão. Experiência na área de comunicação por mídias sociais e análise de dados de processos produtivos.",
