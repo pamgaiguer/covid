@@ -225,7 +225,7 @@ textarea{
     }
     .embed-responsive iframe {
         left: 6vw !important;
-    //     width: 95% !important;
+        //     width: 95% !important;
     }
     .simulador{
         height: 75vh;
@@ -238,8 +238,9 @@ textarea{
             font-size: 12px;
         }
     }
-
-    
+    .logo-apoio {
+        height: 7vh;
+    }
 }
 .methodology{
     .methodology-img{
@@ -388,6 +389,25 @@ textarea{
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
         }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .dropdown.show .dropdown-menu, .dropdown .dropdown-menu {
+        background-color: white;
+    }
+    .navbar-collapse {
+        border-left: #f4f4f4;
+    }
+    .fixed-top .navbar-collapse {
+        background-color: #f4f4f4;
+        float: left;
+    }
+}
+@media (max-width: 767px){
+    .navbar .navbar-nav .dropdown-menu {
+        height: 180px;
+        overflow-y: scroll;
     }
 }
 
