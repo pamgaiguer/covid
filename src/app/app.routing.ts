@@ -30,6 +30,7 @@ import { Note2Component } from './publications/note2/note2.component'
 import { Note3Component } from './publications/note3/note3.component'
 import { Note4Component } from './publications/note4/note4.component'
 import { Note5Component } from './publications/note5/note5.component'
+import { Note6Component } from './publications/note6/note6.component'
 
 const routes: Routes =[
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -69,6 +70,10 @@ const routes: Routes =[
     {
       path: 'note5',
       component: Note5Component
+    },
+    {
+      path: 'note6',
+      component: Note6Component
     },
     {
       path: 'article1',
