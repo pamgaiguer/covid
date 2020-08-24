@@ -8,6 +8,7 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { DashComponent } from './pages/dash/dash.component';
 
 import { HowtouseComponent } from './pages/howtouse/howtouse.component';
+import { HowtouseSchoolsComponent } from './pages/howtouse_schools/howtouse_schools.component';
 import { PublicityComponent } from './pages/publicity/publicity.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { PublicationsComponent } from './pages/publications/publications.component';
@@ -42,6 +43,7 @@ const routes: Routes =[
   { path: 'dash',       component: DashComponent },
   { path: 'escolas',       component: SchoolsComponent },
   { path: 'howtouse',    component: HowtouseComponent },
+  { path: 'howtouse_schools',    component: HowtouseSchoolsComponent },
   { path: 'howtoact',    component: HowToActComponent },
   { path: 'statistics',    component: StatisticsComponent },
   { path: 'partners',    component: PartnersComponent },

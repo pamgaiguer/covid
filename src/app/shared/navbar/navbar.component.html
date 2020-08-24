@@ -14,10 +14,14 @@
                     <div ngbDropdown class="d-inline-block dropdown">
                         <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Simulador</a>
                         <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
-                          <a class="dropdown-item" [routerLink]="['/dash']">Simulador</a>
-                          <a class="dropdown-item" [routerLink]="['/escolas']">Simulador das Escolas</a>
+                            <a class="dropdown-item" [routerLink]="['/escolas']">Simulador das Escolas</a>
+                            <a class="dropdown-item" [routerLink]="['/howtouse_schools']">Info Simulador das Escolas</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" [routerLink]="['/dash']">Simulador Territórios</a>
                           <a class="dropdown-item" [routerLink]="['/howtouse']">Como Usar</a>
                           <a class="dropdown-item" [routerLink]="['/methodology']">Metodologia</a>
+
+                          
                         </div>
                       </div>
                 </li>

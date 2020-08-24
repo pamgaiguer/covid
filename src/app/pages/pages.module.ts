@@ -13,6 +13,7 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 
 import { DashComponent } from './dash/dash.component';
 import { HowtouseComponent } from './howtouse/howtouse.component';
+import { HowtouseSchoolsComponent } from './howtouse_schools/howtouse_schools.component';
 import { ArticleComponent } from './article/article.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { NotesComponent } from './notes/notes.component';
@@ -46,6 +47,7 @@ import { SchoolsComponent } from './schools/schools.component';
     declarations: [
         DashComponent,
         HowtouseComponent,
+        HowtouseSchoolsComponent,
         ArticleComponent,
         AboutusComponent,
         NotesComponent,
