@@ -11,6 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 
+import * as $ from "jquery";
+
 import { PagesModule } from './pages/pages.module';
 import { Article1Component } from './publications/article1/article1.component';
 import { Article2Component } from './publications/article2/article2.component';
@@ -19,8 +21,9 @@ import { Note2Component } from './publications/note2/note2.component';
 import { Note3Component } from './publications/note3/note3.component';
 import { Note4Component } from './publications/note4/note4.component';
 
-import * as $ from "jquery";
 import { Note5Component } from './publications/note5/note5.component';
+import { Note6Component } from './publications/note6/note6.component';
+import { Note7Component } from './publications/note7/note7.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,8 @@ import { Note5Component } from './publications/note5/note5.component';
     Note3Component,
     Note4Component,
     Note5Component,
+    Note6Component,
+    Note7Component,
   ],
   imports: [
     BrowserModule,

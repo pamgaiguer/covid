@@ -32,6 +32,7 @@ import { Note3Component } from './publications/note3/note3.component'
 import { Note4Component } from './publications/note4/note4.component'
 import { Note5Component } from './publications/note5/note5.component'
 import { Note6Component } from './publications/note6/note6.component'
+import { Note7Component } from './publications/note7/note7.component'
 
 const routes: Routes =[
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -76,6 +77,10 @@ const routes: Routes =[
     {
       path: 'note6',
       component: Note6Component
+    },
+    {
+      path: 'note7',
+      component: Note7Component
     },
     {
       path: 'article1',
