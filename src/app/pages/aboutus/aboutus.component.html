@@ -47,7 +47,7 @@
                             <div class="col-xs-12 col-md-6">
                                 <ul class="list-unstyled">
                                     <li *ngFor="let sobre of allaboutus; let i = index">
-                                        <div *ngIf="i<14">
+                                        <div *ngIf="i<16">
                                             <a class="researcher" target="_blank" href="{{sobre.link}}">{{sobre.name}}</a>
                                             <p>{{sobre.bio}}</p>
                                         </div>
@@ -57,7 +57,7 @@
                             <div class="col-xs-12 col-md-6">
                                 <ul class="list-unstyled">
                                     <li *ngFor="let sobre of allaboutus; let i = index">
-                                        <div *ngIf="i>=14">
+                                        <div *ngIf="i>=16">
                                             <a class="researcher" target="_blank" href="{{sobre.link}}">{{sobre.name}}</a>
                                             <p>{{sobre.bio}}</p>
                                         </div>

@@ -18,6 +18,12 @@ export const aboutus =[
         photo: "",
     },
     {
+        name: "Beatriz Carniel",
+        link: "http://lattes.cnpq.br/7343964970219286",
+        bio: "Doutora em Medicina Tropical pela Universidade de Medicina Tropical de Liverpool, Mestra em Biotecnologia pela Universidade Federal de São Carlos em parceria com a Embrapa. Desenvolveu estudos clínicos para investigar o impacto da vacina de gripe viva na imunidade contra o vírus e contra a bactéria causadora da pneumonia.",
+        photo: "",
+    },
+    {
         name: "Bruna Gaudencio Guimarães",
         link: "http://lattes.cnpq.br/4671276183191204",
         bio: "MIT MicroMasters in Data, Economics and Development Policy. Bacharelado em Relações Internacionais e Ciências e Humanidades pela UFABC. Consultora de Analytics e pesquisadora em Biossegurança.",
@@ -60,6 +66,12 @@ export const aboutus =[
         photo: "",
     },
     {
+        name: "Gerusa Figueiredo",
+        link: "http://lattes.cnpq.br/7589271265620611",
+        bio: "Doutora em Medicina pelo Departamento de Medicina Preventiva da Faculdade de Medicina da USP. Desenvolve pesquisa na área de epidemiologia de doenças infecciosas",
+        photo: "",
+    },
+    {
         name: "Giovanna Arícia Dagel Souza",
         link: "#",
         bio: "Graduanda no Bacharelado em Relações Internacionais pela Universidade Federal do ABC. Apreço e desenvolvimento atual pela área de comunicação digital, especificamente em produção gráfica para redes sociais e design de interfaces.",
@@ -87,6 +99,12 @@ export const aboutus =[
         name: "José Paulo Guedes Pinto",
         link: "http://lattes.cnpq.br/5483672222004056",
         bio: "Sistemas complexos, crise econômica, ecologia urbana, economia política, economia da colaboração em massa, modelos dinâmicos, propriedade intelectual.",
+        photo: "",
+    },
+    {
+        name: "Juliana Lazzari Silveira",
+        link: "https://www.linkedin.com/in/juliana-lazzari/",
+        bio: "Graduada em Marketing e Publicidade pelo Mackenzie (2004) com curso de Atualização em Branding pela ESPM (2016). Possui carreira de 16 anos de experiência em Marketing, Comercial e Eventos, com passagens por multinacionais como Baxter, Alcon e Werfen.",
         photo: "",
     },
     {
@@ -147,6 +165,12 @@ export const aboutus =[
         name: "Renan da Rosa Bastos",
         link: "http://www.renanbastos.com.br/",
         bio: "Graduado em Tecnologia Análise e Desenvolvimento de Sistemas, amante de tecnologia, inovação e empreendedorismo. Atualmente trabalhando como engenheiro de software.",
+        photo: "",
+    },
+    {
+        name: "Rita Masini",
+        link: "http://linkedin.com/in/ritamasini",
+        bio: "Produtora Cultural e Gestora de projetos. Cursou Administração da Cultura (UFRGS - 2015) e Gestão Cultural (UFRGS – 2017). Elaborou, produziu e gerenciou projetos pelo PROAC ICMS – SP, Lei de Fomento – SP, Lei Rouanet, LIC RS.",
         photo: "",
     },
     {
