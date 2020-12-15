@@ -150,6 +150,12 @@ export const aboutus =[
         photo: "",
     },
     {
+            name: "Pamela Massiel Chiroque Solano",
+            link: "https://pchiroque.github.io/",
+            bio: "Doutorado e mestrado em Ciências Estatísticas pela Universidade Federal do Rio de Janeiro (UFRJ). Pós-Doutorado em modelagem ecológica pela UFRJ.  Com experiência na área de modelagem via inferência Bayesiana e em desenvolver ferramentas estatísticas aplicadas em problemas reais.",
+            photo: "",
+    },
+    {
         name: "Pamella Gaiguer Santos",
         link: "https://pamgaiguer.github.io/pamgaiguer/",
         bio: "Bacharel em Sistemas de Informação (Mackenzie/SP). Programação Front-End, UX (User Experience) e UI (User Interface). Responsável pelo desenvolvimento e manutenção do site AçãoCovid19.org",

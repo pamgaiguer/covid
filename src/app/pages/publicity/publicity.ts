@@ -1,4 +1,11 @@
 export const publicity =[ 
+  {
+    link: "https://www.bbc.com/portuguese/brasil-54472139",
+    titulo: "Coronavírus: como desigualdade entre ricos e pobres ajuda a explicar alta de casos de covid-19 em Manaus",
+    data: "13/10",
+    fonte: "BBC"
+
+  },
     {
         link: "https://www.lemonde.fr/international/article/2020/08/14/au-bresil-plus-de-105-000-morts-et-un-president-gueri-grace-a-la-chloroquine_6048948_3210.html",
         titulo: "Au Brésil plus de 105000 morts et un président guéri grâce à la cloroquine",
