@@ -157,7 +157,7 @@ export const aboutus =[
     },
     {
         name: "Pamella Gaiguer Santos",
-        link: "https://pamgaiguer.github.io/pamgaiguer/",
+        link: "http://pamgaiguer-dev.web.app/",
         bio: "Bacharel em Sistemas de Informação (Mackenzie/SP). Programação Front-End, UX (User Experience) e UI (User Interface). Responsável pelo desenvolvimento e manutenção do site AçãoCovid19.org",
         photo: "",
     },
